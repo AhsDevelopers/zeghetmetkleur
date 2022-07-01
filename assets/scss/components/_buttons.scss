@@ -1,0 +1,34 @@
+//
+// Buttons
+//
+
+@import '../abstracts/mediamixins';
+@import '../abstracts/variables';
+
+.btn {
+  border: 3px solid $color-black;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-orange-dark;
+    border: 3px solid $color-orange-dark;
+  }
+
+  a {
+    color: $color-black;
+    font-weight: $font-weight-black;
+  }
+}
+
+.btn-regular {
+  padding: .8em 2.5em;
+
+  a {
+    font-size: 16px;
+  }
+}
+
+.btn-small {
+  padding: .5em 2em;
+}

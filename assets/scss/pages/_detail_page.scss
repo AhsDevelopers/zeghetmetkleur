@@ -1,0 +1,401 @@
+//
+// Workshop Detail Page
+//
+
+@import '../abstracts/mediamixins';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+main.detail-page {
+  margin-top: 3em;
+
+  .orange-block {
+    height: 1000px;
+    background-color: $color-orange-medium;
+    width: 12.5%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2em;
+  }
+
+  .info-container {
+    width: 85%;
+    margin: 0 auto;
+
+    .return {
+      margin-left: 7em;
+      color: $color-black;
+    }
+  }
+
+  section.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-right: 5em;
+
+    .image-section {
+      width: 55%;
+      .top {
+        margin-bottom: 1em;
+        img {
+          width: 100%;
+        }
+      }
+
+      .bottom {
+        display: flex;
+
+        .img-small1 {
+          width: 30%;
+        }
+
+        .img-small2 {
+          width: 68%;
+          margin-left: 1em;
+        }
+      }
+
+      .sponsor {
+        width: 100%;
+        margin-left: 55%;
+
+        p {
+          text-transform: uppercase;
+        }
+
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .text-section {
+      width: 35%;
+
+      h1 {
+        font-size: 45px;
+        font-weight: $font-weight-bold;
+        margin-top: -1em;
+      }
+
+      .intro {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 18px;
+
+        .bold {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+}
+
+.form-section {
+  h2 {
+    @include title();
+    margin-top: 3em;
+    margin-left: 9.5em;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-gray-light;
+    width: 95%;
+    padding: 3em 3em 3em 0;
+
+    .img {
+      width: 25%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      .personal {
+        width: 50%;
+
+        label {
+          display: block;
+          font-size: 20px;
+          font-weight: $font-weight-bold;
+        }
+
+        > div {
+          margin-bottom: 1em;
+        }
+
+        input {
+          width: 72.5%;
+  
+          &::placeholder {
+            font-size: 18px;
+            color: $color-gray-dark;
+            padding: 0 .5em;
+          }
+        }
+
+        .available-options {
+          select {
+            min-width: 22.5%;
+          }
+        }
+
+        .citycode {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+
+          .postal_code,
+          .city {
+            width: 20%;
+            
+            input {
+              width: 325%;
+            }
+          }
+        }
+      }
+
+      .workshop-selection {
+        width: 50%;
+
+        .workshop-option {
+          margin-top: .5em;
+
+          label {
+            font-size: 18px;
+          }
+        }
+
+        .location {
+          margin-top: 2.5em;
+          margin-bottom: 3em;
+
+          label {
+            display: block;
+            font-size: 20px;
+            font-weight: $font-weight-bold;
+          }
+
+          select {
+            width: 80%;
+          }
+        }
+
+        .remarks {
+          margin-bottom: 3em;
+
+          label {
+            display: block;
+            font-size: 20px;
+            font-weight: $font-weight-bold;
+          }
+
+          textarea {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .practical {
+      width: 20%;
+    }
+  }
+
+  .bold {
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+  }
+}
+
+@include small {
+  main.detail-page {
+    .orange-block{
+      display: none;
+    }
+
+    .info-container {
+      width: 100%;
+
+      .return {
+        margin-left: 1.5em;
+      }
+    }
+
+    section.info {
+      flex-direction: column;
+
+      .image-section {
+        width: 100vw;
+
+        .bottom {
+          display: none;
+        }
+
+        .sponsor {
+          margin-left: 40%;
+
+          img {
+            margin-top: -1em;
+            margin-bottom: 2em;
+          }
+        }
+      }
+
+      .text-section {
+        width: 100%;
+        margin: 2em;
+
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .form-section {
+    h2 {
+      @include title-small();
+      margin-left: 0;
+      margin-top: 0;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .form-container {
+      flex-direction: column;
+      padding: 1em 0 1em 1em;
+      width: 100vw;
+      box-sizing: border-box;
+
+      .img {
+        display: none;
+      }
+
+      form {
+        flex-direction: column;
+        width: 100%;
+
+        .personal,
+        .workshop-selection {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .personal {
+          input {
+            width: 90%;
+          }
+
+          .available-options {
+            select {
+              min-width: 27.5%;
+            }
+          }
+
+          .citycode {
+            width: 62.5%;
+          }
+        }
+        
+        .workshop-selection {
+          .location {
+            select {
+              width: 90%;
+            }
+          }
+
+          .remarks {
+            textarea {
+              width: 90%;
+            }
+          }
+        }
+      }
+
+      .practical {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@include medium {
+  main.detail-page {
+    .orange-block {
+      height: 1200px;
+    }
+
+    .info-container {
+      .return {
+        margin-left: 4em;
+      }
+    }
+
+    section.info {
+      margin-right: 0;
+
+      .image-section {
+        .bottom {
+          .img-small1 {
+            display: none;
+          }
+
+          .img-small2 {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+
+        .sponsor {
+          margin-left: 30%;
+        }
+      }
+
+      .text-section {
+        width: 40%;
+      }
+    }
+  }
+
+  .form-section {
+    h2 {
+      @include title-medium();
+      margin-left: 0;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .form-container {
+      flex-direction: column;
+      padding: 1em 1em 1em 1em;
+      width: 100vw;
+      box-sizing: border-box;
+      
+      .img {
+        display: none;
+      }
+
+      form {
+        width: 100%;
+      }
+      
+      .practical {
+        width: 90%;
+      }
+    }
+
+  }
+}

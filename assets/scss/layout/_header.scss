@@ -1,0 +1,192 @@
+//
+// Header
+//
+
+@import '../abstracts/mediamixins';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+header {
+  background-color: $color-white;
+  z-index: 10;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 1em auto;
+
+    .logo-block {
+      margin-left: 3em;
+
+      .logo-artevelde {
+        width: 200px;
+        margin-top: 2em;
+      }
+
+      .logo {
+        width: 200px;
+        margin-left: 5em;
+        margin-top: 1em;
+      }
+    }
+
+    nav {
+      width: 30%;
+      margin-top: 3em;
+  
+      ul {
+        display: flex;
+        justify-content: flex-end;
+  
+        li {
+
+          &:last-child {
+            margin-left: 10%;
+          }
+
+          a {
+            font-size: 30px;
+            font-weight: $font-weight-black;
+            color: $color-black;
+            padding: .05em .5em;
+            border-radius: .3em;
+            position: relative;
+            display: block;
+            min-width: 100px;
+            text-align: center;
+
+
+            &:hover,
+            &:focus {
+              background-color: $color-orange-dark;
+              color: $color-white;
+              
+              &::after {
+                @include speechbubble();
+              }
+            }
+          }
+
+          a.active {
+            //border-bottom: 5px solid vars.$color-orange;
+            background-color: $color-orange-dark;
+            color: $color-white;
+
+            &::after {
+              @include speechbubble();
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+@include small {
+  header {
+    position: sticky;
+    top: 0;
+
+    .header-container {
+      width: 95%;
+
+      .logo-block {
+        margin-left: 0;
+
+        .logo-artevelde {
+          margin-top: 1em;
+          width: 125px;
+        }
+
+        .logo {
+          width: 125px;
+          margin-left: -2em;
+        }
+      }
+
+      nav {
+        display: none;
+        width: 100%;
+        margin-left: -7.5em;
+        margin-top: 6em;
+        z-index: 20;
+
+        ul {
+          width: 100%;
+          flex-direction: column;
+
+          li {
+            &:last-child {
+              margin-left: 0;
+              margin-top: 1em;
+            }
+
+            a {
+              font-size: 20px;
+              width: 50px;
+              text-align: center;
+            }
+          }
+        }
+
+        &.toggled {
+          display: flex;
+        }
+      }
+
+      .hamburger {
+        display: block;
+        margin-top: .75em;
+        margin-right: .5em;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@include medium {
+  header {
+    .header-container {
+      width: 95%;
+
+      .logo-block {
+        margin-left: 0;
+        width: 70%;
+
+        &:nth-child(2) {
+          margin-right: 5em;
+        }
+
+        .logo-artevelde {
+          margin-top: 0;
+          width: 80%;
+        }
+
+        .logo {
+          width: 60%;
+        }
+      }
+
+      nav {
+        width: 30%;
+        margin-top: 1em;
+
+        ul {
+          width: 20%;
+          margin-left: 10em;
+          li {
+            a {
+              font-size: 25px;
+              padding: .05em .5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

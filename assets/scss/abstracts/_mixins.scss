@@ -1,0 +1,56 @@
+//
+// Mixins
+//
+
+@import './variables';
+
+@mixin title($color: $color-black) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: 48px;
+  line-height: 1;
+}
+
+@mixin title-small($color: $color-black) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: 30px;
+  line-height: 1;
+}
+
+@mixin title-medium($color: $color-black) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: 36px;
+  line-height: 1;
+}
+
+@mixin speechbubble($color: $color-orange-dark) {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: $color;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}
+
+@mixin speechbubble-right($color: $color-orange-dark) {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: $color;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}

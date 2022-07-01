@@ -1,0 +1,1461 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  line-height: 1.7;
+}
+
+header {
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 1em auto;
+}
+
+header .header-container .logo-block {
+  margin-left: 3em;
+}
+
+header .header-container .logo-block .logo-artevelde {
+  width: 200px;
+  margin-top: 2em;
+}
+
+header .header-container .logo-block .logo {
+  width: 200px;
+  margin-left: 5em;
+  margin-top: 1em;
+}
+
+header .header-container nav {
+  width: 30%;
+  margin-top: 3em;
+}
+
+header .header-container nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .header-container nav ul li:last-child {
+  margin-left: 10%;
+}
+
+header .header-container nav ul li a {
+  font-size: 30px;
+  font-weight: 900;
+  color: #000000;
+  padding: .05em .5em;
+  border-radius: .3em;
+  position: relative;
+  display: block;
+  min-width: 100px;
+  text-align: center;
+}
+
+header .header-container nav ul li a:hover, header .header-container nav ul li a:focus {
+  background-color: #F69142;
+  color: #FFFFFF;
+}
+
+header .header-container nav ul li a:hover::after, header .header-container nav ul li a:focus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #F69142;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}
+
+header .header-container nav ul li a.active {
+  background-color: #F69142;
+  color: #FFFFFF;
+}
+
+header .header-container nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #F69142;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}
+
+header .header-container .hamburger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+  header .header-container {
+    width: 95%;
+  }
+  header .header-container .logo-block {
+    margin-left: 0;
+  }
+  header .header-container .logo-block .logo-artevelde {
+    margin-top: 1em;
+    width: 125px;
+  }
+  header .header-container .logo-block .logo {
+    width: 125px;
+    margin-left: -2em;
+  }
+  header .header-container nav {
+    display: none;
+    width: 100%;
+    margin-left: -7.5em;
+    margin-top: 6em;
+    z-index: 20;
+  }
+  header .header-container nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .header-container nav ul li:last-child {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  header .header-container nav ul li a {
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+  }
+  header .header-container nav.toggled {
+    display: flex;
+  }
+  header .header-container .hamburger {
+    display: block;
+    margin-top: .75em;
+    margin-right: .5em;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .header-container {
+    width: 95%;
+  }
+  header .header-container .logo-block {
+    margin-left: 0;
+    width: 70%;
+  }
+  header .header-container .logo-block:nth-child(2) {
+    margin-right: 5em;
+  }
+  header .header-container .logo-block .logo-artevelde {
+    margin-top: 0;
+    width: 80%;
+  }
+  header .header-container .logo-block .logo {
+    width: 60%;
+  }
+  header .header-container nav {
+    width: 30%;
+    margin-top: 1em;
+  }
+  header .header-container nav ul {
+    width: 20%;
+    margin-left: 10em;
+  }
+  header .header-container nav ul li a {
+    font-size: 25px;
+    padding: .05em .5em;
+  }
+}
+
+footer {
+  background-color: #91A1BB;
+  margin-top: 5em;
+}
+
+footer .footer-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+}
+
+footer .footer-container h2 {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+footer .footer-container ul {
+  padding: 0;
+  margin: -1em 0 2em 0;
+}
+
+footer .footer-container ul li {
+  display: inline;
+  padding-right: 1em;
+}
+
+footer .footer-container ul li a {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+
+footer .footer-container ul li a:hover, footer .footer-container ul li a:focus {
+  border-bottom: 4px solid #FFFFFF;
+}
+
+footer .footer-container ul li a.active {
+  border-bottom: 4px solid #FFFFFF;
+}
+
+footer .footer-container p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  footer .footer-container h2 {
+    font-size: 32px;
+  }
+  footer .footer-container ul li a {
+    font-size: 24px;
+  }
+  footer .footer-container p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .footer-container h2 {
+    font-size: 40px;
+  }
+  footer .footer-container ul li a {
+    font-size: 28px;
+  }
+  footer .footer-container p {
+    font-size: 18px;
+  }
+}
+
+#totop {
+  right: 1rem;
+  cursor: pointer;
+  bottom: 20px;
+  width: 3em;
+  outline: none;
+  position: fixed;
+  z-index: 99;
+  display: none;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  color: white;
+  border: none;
+  background-color: #f58732;
+  transition: transform 80ms ease-in;
+}
+
+#totop:hover, #totop:focus {
+  transform: scale(1.3);
+}
+
+#totop:focus {
+  outline: none;
+}
+
+.btn {
+  border: 3px solid #000000;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #F69142;
+  border: 3px solid #F69142;
+}
+
+.btn a {
+  color: #000000;
+  font-weight: 900;
+}
+
+.btn-regular {
+  padding: .8em 2.5em;
+}
+
+.btn-regular a {
+  font-size: 16px;
+}
+
+.btn-small {
+  padding: .5em 2em;
+}
+
+main.homepage .intro {
+  width: 85%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main.homepage .intro .image-section {
+  width: 70%;
+  height: 400px;
+}
+
+main.homepage .intro .image-section .home-intro {
+  width: 85%;
+  height: 100%;
+}
+
+main.homepage .intro .text-section {
+  width: 40%;
+  margin-top: -2.5em;
+}
+
+main.homepage .intro .text-section h1 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  line-height: 1;
+}
+
+main.homepage .intro .text-section p {
+  font-size: 16px;
+  margin-top: -1em;
+}
+
+main.homepage .orange-block {
+  height: 1350px;
+  background-color: #F9B784;
+  width: 12.5%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -2em;
+}
+
+main.homepage .workshops h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  line-height: 1;
+  margin-left: 7em;
+}
+
+main.homepage .workshops .workshops-container {
+  background-color: #F0F6FA;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: -1em;
+  padding: 2em 1em 1em 7.5em;
+}
+
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+  background: none !important;
+}
+
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot.active, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:hover, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:focus {
+  background: #F69142 !important;
+}
+
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card {
+  width: 33%;
+  margin-right: 1em;
+}
+
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card .thumbnail {
+  max-width: 100%;
+  height: 45%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+main.homepage .team h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 2em;
+}
+
+main.homepage .team h2 span {
+  font-family: "Source Serif Pro", sans-serif;
+}
+
+main.homepage .team .glider-contain.glider-contain-team {
+  width: 90% !important;
+  margin: 5em auto 0 auto;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider-dots {
+  margin-top: -2em;
+  margin-bottom: 2em;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
+  width: 2em !important;
+  height: 2em !important;
+  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+  background: none !important;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot.active, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:hover, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:focus {
+  background: #F69142 !important;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
+  width: 20em !important;
+  background-color: #F9B784;
+  padding-bottom: 1em;
+  margin: 8em 1em 0 1em;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
+  margin-top: -7.5em;
+  width: 100%;
+  height: 45%;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info {
+  width: 90%;
+  margin: -1em auto 0 auto;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .firstname,
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
+  margin-top: -1.2em;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul {
+  list-style-type: disc;
+  margin-left: -1em;
+  margin-top: -1.5em;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul li {
+  font-size: 18px;
+}
+
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info p {
+  font-size: 18px;
+  margin-top: -1.5em;
+}
+
+@media (max-width: 767px) {
+  main.homepage .intro {
+    width: 100%;
+    display: block;
+  }
+  main.homepage .intro .image-section {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -2em;
+    height: 200px;
+  }
+  main.homepage .intro .image-section .home-intro {
+    width: 100%;
+  }
+  main.homepage .intro .text-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  main.homepage .intro .text-section h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+  }
+  main.homepage .intro .text-section .btn-regular {
+    display: block;
+    margin: 2em auto 0 auto;
+  }
+  main.homepage .orange-block {
+    display: none;
+  }
+  main.homepage .workshops {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main.homepage .workshops h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 0;
+  }
+  main.homepage .workshops .workshops-container {
+    width: 90%;
+    margin-left: 0;
+    padding: .5em 1em 0 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+    margin-top: 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  main.homepage .team {
+    margin-top: -1em;
+  }
+  main.homepage .team h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots {
+    margin-top: 1em;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
+    width: 25em !important;
+    margin: 6em .5em 0 .5em;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
+    height: 30%;
+    margin-top: -5.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main.homepage .intro {
+    width: 95%;
+  }
+  main.homepage .intro .image-section {
+    height: 250px;
+  }
+  main.homepage .intro .text-section h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1;
+  }
+  main.homepage .orange-block {
+    height: 1100px;
+  }
+  main.homepage .workshops h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 5em;
+  }
+  main.homepage .workshops .workshops-container {
+    padding: .5em 1em 1em 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+    margin-top: 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+  main.homepage .team h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
+    height: 35%;
+    margin-top: -6em;
+  }
+}
+
+section.intro > h1 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+}
+
+section.intro .searchbar {
+  background-color: #F0F6FA;
+}
+
+section.intro .searchbar-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+}
+
+section.intro .searchbar-container .keyword {
+  margin-right: 2em;
+}
+
+section.intro .searchbar label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section.intro .searchbar input,
+section.intro .searchbar select {
+  width: 12.5em;
+}
+
+main.overview-page .workshops-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5em 1em;
+  margin-top: 3em;
+  z-index: 1;
+  position: relative;
+}
+
+main.overview-page .workshops-container .workshop {
+  width: 100%;
+  position: relative;
+}
+
+main.overview-page .workshops-container .workshop.hide {
+  display: none;
+}
+
+main.overview-page .workshops-container .workshop img {
+  max-width: 100%;
+  height: 42.5%;
+}
+
+main.overview-page .workshops-container .workshop .category {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #7E57C5;
+  color: #FFFFFF;
+  padding: .2em 1.5em;
+  font-size: 25px;
+  font-weight: 900;
+  border-radius: .3em;
+}
+
+main.overview-page .workshops-container .workshop .category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #7E57C5;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}
+
+main.overview-page .workshops-container .workshop .title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+main.overview-page .workshops-container .workshop .subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -1em;
+}
+
+main.overview-page .workshops-container .workshop p {
+  font-size: 18px;
+}
+
+main.overview-page .workshops-container .workshop .bold {
+  font-weight: 700;
+}
+
+main.overview-page .workshops-container .workshop .btn {
+  margin-top: 1em;
+}
+
+@media (max-width: 767px) {
+  section.intro > h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+  }
+  section.intro .searchbar-container {
+    flex-direction: column;
+    padding: 1em 0;
+  }
+  section.intro .searchbar-container .keyword {
+    margin-right: .5em;
+    margin-bottom: 1em;
+  }
+  section.intro .searchbar-container .search-field input,
+  section.intro .searchbar-container .search-field select {
+    width: 100%;
+  }
+  main.overview-page .workshops-container {
+    grid-template-columns: 1fr;
+    gap: 6em;
+    margin-bottom: 10em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  section.intro > h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+  }
+  main.overview-page .workshops-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5em 1em;
+    margin-bottom: 10em;
+  }
+}
+
+main.detail-page {
+  margin-top: 3em;
+}
+
+main.detail-page .orange-block {
+  height: 1000px;
+  background-color: #F9B784;
+  width: 12.5%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -2em;
+}
+
+main.detail-page .info-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+main.detail-page .info-container .return {
+  margin-left: 7em;
+  color: #000000;
+}
+
+main.detail-page section.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-right: 5em;
+}
+
+main.detail-page section.info .image-section {
+  width: 55%;
+}
+
+main.detail-page section.info .image-section .top {
+  margin-bottom: 1em;
+}
+
+main.detail-page section.info .image-section .top img {
+  width: 100%;
+}
+
+main.detail-page section.info .image-section .bottom {
+  display: flex;
+}
+
+main.detail-page section.info .image-section .bottom .img-small1 {
+  width: 30%;
+}
+
+main.detail-page section.info .image-section .bottom .img-small2 {
+  width: 68%;
+  margin-left: 1em;
+}
+
+main.detail-page section.info .image-section .sponsor {
+  width: 100%;
+  margin-left: 55%;
+}
+
+main.detail-page section.info .image-section .sponsor p {
+  text-transform: uppercase;
+}
+
+main.detail-page section.info .image-section .sponsor img {
+  width: 30%;
+}
+
+main.detail-page section.info .text-section {
+  width: 35%;
+}
+
+main.detail-page section.info .text-section h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: -1em;
+}
+
+main.detail-page section.info .text-section .intro {
+  font-size: 20px;
+}
+
+main.detail-page section.info .text-section p {
+  font-size: 18px;
+}
+
+main.detail-page section.info .text-section p .bold {
+  font-weight: 700;
+}
+
+.form-section h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  line-height: 1;
+  margin-top: 3em;
+  margin-left: 9.5em;
+}
+
+.form-section .form-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0F6FA;
+  width: 95%;
+  padding: 3em 3em 3em 0;
+}
+
+.form-section .form-container .img {
+  width: 25%;
+}
+
+.form-section .form-container .img img {
+  width: 100%;
+}
+
+.form-section .form-container form {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.form-section .form-container form .personal {
+  width: 50%;
+}
+
+.form-section .form-container form .personal label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-section .form-container form .personal > div {
+  margin-bottom: 1em;
+}
+
+.form-section .form-container form .personal input {
+  width: 72.5%;
+}
+
+.form-section .form-container form .personal input::placeholder {
+  font-size: 18px;
+  color: #91A1BB;
+  padding: 0 .5em;
+}
+
+.form-section .form-container form .personal .available-options select {
+  min-width: 22.5%;
+}
+
+.form-section .form-container form .personal .citycode {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.form-section .form-container form .personal .citycode .postal_code,
+.form-section .form-container form .personal .citycode .city {
+  width: 20%;
+}
+
+.form-section .form-container form .personal .citycode .postal_code input,
+.form-section .form-container form .personal .citycode .city input {
+  width: 325%;
+}
+
+.form-section .form-container form .workshop-selection {
+  width: 50%;
+}
+
+.form-section .form-container form .workshop-selection .workshop-option {
+  margin-top: .5em;
+}
+
+.form-section .form-container form .workshop-selection .workshop-option label {
+  font-size: 18px;
+}
+
+.form-section .form-container form .workshop-selection .location {
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+
+.form-section .form-container form .workshop-selection .location label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-section .form-container form .workshop-selection .location select {
+  width: 80%;
+}
+
+.form-section .form-container form .workshop-selection .remarks {
+  margin-bottom: 3em;
+}
+
+.form-section .form-container form .workshop-selection .remarks label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-section .form-container form .workshop-selection .remarks textarea {
+  width: 80%;
+}
+
+.form-section .form-container .practical {
+  width: 20%;
+}
+
+.form-section .bold {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  main.detail-page .orange-block {
+    display: none;
+  }
+  main.detail-page .info-container {
+    width: 100%;
+  }
+  main.detail-page .info-container .return {
+    margin-left: 1.5em;
+  }
+  main.detail-page section.info {
+    flex-direction: column;
+  }
+  main.detail-page section.info .image-section {
+    width: 100vw;
+  }
+  main.detail-page section.info .image-section .bottom {
+    display: none;
+  }
+  main.detail-page section.info .image-section .sponsor {
+    margin-left: 40%;
+  }
+  main.detail-page section.info .image-section .sponsor img {
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+  main.detail-page section.info .text-section {
+    width: 100%;
+    margin: 2em;
+  }
+  main.detail-page section.info .text-section h1 {
+    font-size: 36px;
+  }
+  .form-section h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    line-height: 1;
+  }
+  .form-section .form-container {
+    flex-direction: column;
+    padding: 1em 0 1em 1em;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .form-section .form-container .img {
+    display: none;
+  }
+  .form-section .form-container form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-section .form-container form .personal,
+  .form-section .form-container form .workshop-selection {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .form-section .form-container form .personal input {
+    width: 90%;
+  }
+  .form-section .form-container form .personal .available-options select {
+    min-width: 27.5%;
+  }
+  .form-section .form-container form .personal .citycode {
+    width: 62.5%;
+  }
+  .form-section .form-container form .workshop-selection .location select {
+    width: 90%;
+  }
+  .form-section .form-container form .workshop-selection .remarks textarea {
+    width: 90%;
+  }
+  .form-section .form-container .practical {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main.detail-page .orange-block {
+    height: 1200px;
+  }
+  main.detail-page .info-container .return {
+    margin-left: 4em;
+  }
+  main.detail-page section.info {
+    margin-right: 0;
+  }
+  main.detail-page section.info .image-section .bottom .img-small1 {
+    display: none;
+  }
+  main.detail-page section.info .image-section .bottom .img-small2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  main.detail-page section.info .image-section .sponsor {
+    margin-left: 30%;
+  }
+  main.detail-page section.info .text-section {
+    width: 40%;
+  }
+  .form-section h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 0;
+    text-align: center;
+    line-height: 1;
+  }
+  .form-section .form-container {
+    flex-direction: column;
+    padding: 1em 1em 1em 1em;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .form-section .form-container .img {
+    display: none;
+  }
+  .form-section .form-container form {
+    width: 100%;
+  }
+  .form-section .form-container .practical {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

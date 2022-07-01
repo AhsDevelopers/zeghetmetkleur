@@ -1,0 +1,13 @@
+//
+// Typography
+//
+
+@import '../abstracts/variables';
+
+body {
+  font-family: $text-font;
+  
+}
+p{
+  line-height: $line-height;
+}

@@ -1,0 +1,157 @@
+//
+// Workshops Overview
+//
+
+@import '../abstracts/mediamixins';
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+section.intro {
+  > h1 {
+    @include title();
+    text-align: center;
+  }
+
+  .searchbar {
+    background-color: $color-gray-light;
+
+    &-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 2em 0;
+      display: flex;
+
+      .keyword {
+        margin-right: 2em;
+      }
+    }
+    
+    label {
+      display: block;
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+    }
+
+    input,
+    select {
+      width: 12.5em;
+    }
+  }
+}
+
+main.overview-page {
+  .workshops-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em 1em;
+    margin-top: 3em;
+    z-index: 1;
+    position: relative;
+
+    .workshop {
+      width: 100%;
+      position: relative;
+
+      &.hide {
+        display: none
+      }
+      
+      img {
+        max-width: 100%;
+        height: 42.5%;
+      }
+
+      .category {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        background-color: $color-purple;
+        color: $color-white;
+        padding: .2em 1.5em;
+        font-size: 25px;
+        font-weight: $font-weight-black;
+        border-radius: .3em;
+
+        &::after {
+          @include speechbubble-right($color-purple);
+        }
+      }
+
+      .title {
+        font-size: 28px;
+        font-weight: $font-weight-bold;
+      }
+
+      .subtitle {
+        font-size: 25px;
+        font-weight: $font-weight-bold;
+        margin-top: -1em;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .bold {
+        font-weight: $font-weight-bold;
+      }
+
+      .btn {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@include small {
+  section.intro {
+    > h1 {
+      @include title-small();
+    }
+
+    .searchbar {
+      &-container {
+        flex-direction: column;
+        padding: 1em 0;
+
+        .keyword {
+          margin-right: .5em;
+          margin-bottom: 1em;
+        }
+
+        .search-field {
+          input,
+          select {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  main.overview-page {
+    .workshops-container {
+      grid-template-columns: 1fr;
+      gap: 6em;
+      margin-bottom: 10em;
+    }
+  }
+}
+
+@include medium {
+  section.intro {
+    > h1 {
+      @include title-small();
+    }
+  }
+
+  main.overview-page {
+    .workshops-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 5em 1em;
+      margin-bottom: 10em;
+    }
+  }
+}
