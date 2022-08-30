@@ -14,6 +14,18 @@ footer {
     margin: 0 auto;
     padding: 1em 0 5em 0;
 
+    a {
+      color: $color-white;
+
+      &:hover,
+      &:focus {
+        border-bottom: 2px solid $color-white;
+      }
+    }
+    
+    a.active {
+      border-bottom: 4px solid $color-white;
+    }
     h2 {
       color: $color-white;
       font-size: 2rem;

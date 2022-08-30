@@ -582,6 +582,18 @@ footer .footer-container {
   padding: 1em 0 5em 0;
 }
 
+footer .footer-container a {
+  color: #FFFFFF;
+}
+
+footer .footer-container a:hover, footer .footer-container a:focus {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+footer .footer-container a.active {
+  border-bottom: 4px solid #FFFFFF;
+}
+
 footer .footer-container h2 {
   color: #FFFFFF;
   font-size: 2rem;
