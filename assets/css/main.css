@@ -1105,7 +1105,7 @@ main.overview-page .workshops-container .workshop.hide {
 
 main.overview-page .workshops-container .workshop img {
   max-width: 100%;
-  height: 42.5%;
+  /*height: 42.5%;*/
 }
 
 main.overview-page .workshops-container .workshop .category {
