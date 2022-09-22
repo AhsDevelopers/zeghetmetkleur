@@ -745,194 +745,29 @@ footer .footer-container p {
   margin-bottom: 2rem;
 }
 
-main.homepage .intro {
-  width: 85%;
-  margin: 3em auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-main.homepage .intro .image-section {
-  width: 70%;
-  height: 400px;
-}
-
-main.homepage .intro .image-section .home-intro {
-  width: 85%;
-  height: 100%;
-}
-
-main.homepage .intro .text-section {
-  width: 40%;
-  margin-top: -2.5em;
-}
-
-main.homepage .intro .text-section h1 {
-  /*text-transform: uppercase;*/
-  color: #1a1a1a;
-  font-size: 48px;
-  line-height: 1;
-}
-
-main.homepage .intro .text-section p {
-  font-size: 16px;
-  margin-top: -1em;
-}
-
-main.homepage .orange-block {
-  height: 1350px;
-  background-color: #F9B784;
-  width: 12.5%;
-  position: absolute;
-  z-index: -1;
-  margin-top: -2em;
-}
-
-main.homepage .workshops h2 {
-  /*text-transform: uppercase;*/
-  color: #1a1a1a;
-  font-size: 48px;
-  line-height: 1;
-  margin-left: 7em;
-}
-
-main.homepage .workshops .workshops-container {
-  background-color: #F8f8f8;
-  width: 75%;
-  margin-left: 12.5%;
-  margin-top: -1em;
-  padding: 2em 1em 1em 7.5em;
-}
-
-main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
-  margin-top: -1em;
-  margin-bottom: 2em;
-}
-
-main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
-  width: 1.5em !important;
-  height: 1.5em !important;
-  box-shadow: 0px 3px 8px 2px rgba(0, 0, 41, 0.2);
-  background: none !important;
-}
-
-main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot.active, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:hover, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:focus {
-  background: #F69142 !important;
-}
-
-main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card {
-  width: 33%;
-  margin-right: 1em;
-}
-
-main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card .thumbnail {
-  max-width: 100%;
-  height: 45%;
-  object-fit: cover;
-  object-position: 0 0;
-}
-
-main.homepage .team h2 {
-  /*text-transform: uppercase;*/
-  color: #1a1a1a;
-  font-size: 48px;
-  line-height: 1;
-  text-align: center;
-  margin-top: 2em;
-}
-
-main.homepage .team h2 span {
-  font-family: "Source Serif Pro", sans-serif;
-}
-
-main.homepage .team .glider-contain.glider-contain-team {
-  width: 90% !important;
-  margin: 5em auto 0 auto;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider-dots {
-  margin-top: -2em;
-  margin-bottom: 2em;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
-  width: 2em !important;
-  height: 2em !important;
-  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
-  background: none !important;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot.active, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:hover, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:focus {
-  background: #F69142 !important;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
-  background-color: #F8f8f8;
-  padding-bottom: 1em;
-  margin: 8em 1em 0 1em;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
-  margin-top: -7.5em;
-  width: 100%;
-  height: 50%;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: 0 0;
-  overflow: hidden;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info {
-  width: 90%;
-  margin: 0 auto 0 auto;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .firstname,
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
-  font-size: 2rem;
-  line-height: 1;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h4 {
-  margin-top: 1rem;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h5 {
-  font-size: 1.2rem;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul {
-  list-style-type: disc;
-  margin-left: -1em;
-  margin-top: -1.5em;
-  line-height: 1.5;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul li {
-  font-size: 1.2rem;
-}
-
-main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info p {
-  font-size: 1.2rem;
-  margin-top: -1.5em;
-}
-
 @media (max-width: 767px) {
-  main.homepage .intro {
+  main.homepage .intro.sp_section {
     width: 100%;
   }
-  main.homepage .intro .text-section {
+  main.homepage .intro.sp_section .image-section {
+    text-align: center;
+  }
+  main.homepage .intro.sp_section .image-section iframe {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+  }
+  main.homepage .intro.sp_section .text-section {
     width: 90%;
     margin: 0 auto;
-    margin-top: 2em;
   }
-  main.homepage .intro .text-section h1 {
+  main.homepage .intro.sp_section .text-section h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
     font-size: 30px;
     line-height: 1;
   }
-  main.homepage .intro .text-section .btn-regular {
+  main.homepage .intro.sp_section .text-section .btn-regular {
     display: block;
     margin: 2em auto 0 auto;
   }
@@ -1034,6 +869,157 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
     height: 35%;
     margin-top: -6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  main.homepage .intro {
+    width: 85%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  main.homepage .intro .image-section {
+    width: 70%;
+    height: 400px;
+  }
+  main.homepage .intro .image-section .home-intro {
+    width: 85%;
+    height: 100%;
+  }
+  main.homepage .intro .text-section {
+    width: 40%;
+    margin-top: -2.5em;
+  }
+  main.homepage .intro .text-section h1 {
+    /*text-transform: uppercase;*/
+    color: #1a1a1a;
+    font-size: 48px;
+    line-height: 1;
+  }
+  main.homepage .intro .text-section p {
+    font-size: 16px;
+    margin-top: -1em;
+  }
+  main.homepage .orange-block {
+    height: 1350px;
+    background-color: #F9B784;
+    width: 12.5%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2em;
+  }
+  main.homepage .workshops h2 {
+    /*text-transform: uppercase;*/
+    color: #1a1a1a;
+    font-size: 48px;
+    line-height: 1;
+    margin-left: 7em;
+  }
+  main.homepage .workshops .workshops-container {
+    background-color: #F8f8f8;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: -1em;
+    padding: 2em 1em 1em 7.5em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 41, 0.2);
+    background: none !important;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot.active, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:hover, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:focus {
+    background: #F69142 !important;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops #glider-workshops {
+    height: auto;
+    padding-bottom: 5rem;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card {
+    width: 33%;
+    margin-right: 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card .thumbnail {
+    max-width: 100%;
+    height: 45%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+  main.homepage .team h2 {
+    /*text-transform: uppercase;*/
+    color: #1a1a1a;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 2em;
+  }
+  main.homepage .team h2 span {
+    font-family: "Source Serif Pro", sans-serif;
+  }
+  main.homepage .team .glider-contain.glider-contain-team {
+    width: 90% !important;
+    margin: 5em auto 0 auto;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots {
+    margin-top: -2em;
+    margin-bottom: 2em;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
+    width: 2em !important;
+    height: 2em !important;
+    box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+    background: none !important;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot.active, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:hover, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:focus {
+    background: #F69142 !important;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
+    background-color: #F8f8f8;
+    padding-bottom: 1em;
+    margin: 8em 1em 0 1em;
+    height: auto;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
+    margin-top: -7.5em;
+    width: 100%;
+    height: 50%;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    overflow: hidden;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .firstname,
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h4 {
+    margin-top: 1rem;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h5 {
+    font-size: 1.2rem;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul {
+    list-style-type: disc;
+    margin-left: -1em;
+    margin-top: -1.5em;
+    line-height: 1.5;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul li {
+    font-size: 1.2rem;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info p {
+    font-size: 1.2rem;
+    margin-top: -1.5em;
   }
 }
 
