@@ -118,6 +118,23 @@
         "search": ""
     },
     {
+        "category": "Code",
+        "class": "code",
+        "title": "Machine learning",
+        "subtitle": "",
+        "link": "./workshops/machinelearning.html",
+        "description": "Machine learning technologie leert computers hoe ze taken moeten uitvoeren door te leren van data, in plaats van ze te programmeren. Machine learning leert dus dankzij geavanceerde algoritmen die voortkomen uit immense hoeveelheden big data. Hoe meer data toegankelijk zijn voor algoritmen, hoe meer computers kunnen leren. Denk bijvoorbeeld aan productaanbevelingen op websites, gezichtsherkenning en de suggesties voor de snelste route in routeplanners.",
+        "docent": "Dieter De Weirdt",
+        "geschikt": "Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)",
+        "video": "",
+        "tour": "",
+        "photo":"assets/images/workshops-overview/machinelearning.png",
+        "alt": "Teachable machine",
+        "chat": "",
+        "info": "Meer info",
+        "search": ""
+    },
+    {
         "category": "Media",
         "class": "media",
         "title": "Deepdive into Deepfakes",
