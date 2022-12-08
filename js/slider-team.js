@@ -5,6 +5,10 @@ new Glider(document.getElementById('glider-team'), {
   slidesToShow: 2,
   draggable: true, 
   dots: '#dots-team',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
   responsive: [
     {
       breakpoint: 768,
