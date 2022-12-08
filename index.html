@@ -4,15 +4,12 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C2S6PQE7W" data-cookiecategory="analytics" type="text/plain"></script>
-<script>
-  if (cookieconsent.allowedCategory('analytics')) {
-
+<script data-cookiecategory="analytics" type="text/plain">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-0C2S6PQE7W');
-  }
 </script>
 
     <meta charset="UTF-8">
@@ -26,15 +23,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.zeghetmetkleur.be" />
     <meta property="og:title" content="Arteveldehogeschool Gent" />
-    <meta property="og:description" content="Zeg het met kleur 2022 - Workshops voor secundair onderwijs - Arteveldehogeschool Gent" />
+    <meta property="og:description" content="" />
 
-    <meta name="msvalidate.01" content="7FD618475AF8A411423F46A29C8485C4" />
-    
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/glider.min.css">
+    <link rel="stylesheet" href="assets/css/mediabox.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/cookieconsent.css" media="print" onload="this.media='all'">
@@ -73,7 +69,6 @@
       <section class="intro sp_section">
         <div class="image-section">
           <iframe class="home-intro" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
           <!-- <img src="./assets/images/home-intro.jpg" alt="Person checking colors at a computer"  width="70%"> -->
         </div>
   
@@ -93,42 +88,25 @@
         </div>
       </section>
   
+
       <section class="workshops sp_section">
         <h2>Workshops</h2>
   
         <div class="workshops-container">
-          <div class="glider-contain multiple glider-contain-workshops">
-            <button aria-label="Volgende" class="glider-prev"><i class="fa-solid fa-arrow-left"></i>&nbsp;</button>
-            <button aria-label="Vorige" class="glider-next">&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
-            <div class="glider-dots" id="dots-workshops"></div>
-            
-
-            <div class="glider" id="glider-workshops">
+          <div class="workshops-grid">
+            <div class="workshops-card">
+              <img src="assets/images/workshops-overview/druk.jpg" alt="Zeefdruk" class="thumbnail">
+              <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
+              <p>
+                Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
+                Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.
+              </p>
+              <button class="btn btn-small">
+                <a href="workshops/print.html">Meer info</a>
+              </button>
+            </div>
               <div class="workshops-card">
-                <iframe class="thumbnail" src="https://www.youtube.com/embed/ypjn-uTc0Bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- <img src="./images/workshops-overview/3d.jpg" alt="Computer bij 3D printer" class="thumbnail"> -->
-                <h3>Zeg het met 3D</h3>
-                <p>
-                  Tijdens deze workshop maak je kennis met 3D-printing. Je leert de werking van een 3D-printer kennen. Je gaat zelf aan de slag met een 3D-printer. Je leert zelf een object modelleren en klaarmaken om te 3D-printen. We bespreken en analyseren interessante voorbeelden en toepassingen. 
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/3D.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-  
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/beeld.jpg" alt="Persoon maakt video" class="thumbnail">
-                <h3>Vertel het met... Beeld!</h3>
-                <p>
-                  Hoge kwaliteitsvideo’s maken met enkel je smartphone? Het kan! We zien het dagelijks passeren op TikTok en Reels, maar in deze workshop word ook jij de content creator van de toekomst. Monteren en bewerken met niks anders dan je smartphone? Yes, we can!
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/beeld.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-  
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/creative-programming.jpg" alt="Computer op bureau" class="thumbnail">
+                <img src="assets/images/workshops-overview/wot.jpg" alt="Code op scherm" class="thumbnail">
                 <h3>Start-to-Code: Creative Programming</h3>
                 <p>
                   Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.
@@ -138,111 +116,32 @@
                 </button>
               </div>
               
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/wot.jpg" alt="Code op scherm" class="thumbnail">
-                <h3>Start to Code: Web of Things</h3>
+              <div class="workshops-card ">
+                <img src="assets/images/workshop-details/machinelearning/workshop.png" alt="Workshops" class="thumbnail">
+                <h3>Bekijk alle workshops</h3>
                 <p>
-                  Deze workshop zoomt in op het leren programmeren door software met hardware te combineren. Om hardware toegankelijk te maken zullen we gebruik maken van de “Raspberry Pi” met daarop een module “Sense Hat”. De software wordt geschreven m.b.v. de programmeertaal “Python” en de cloud service “Google Firebase”.
+                  We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.
                 </p>
                 <button class="btn btn-small">
-                  <a href="workshops/wot.html" title="Meer info">Meer info</a>
+                  <a href="workshops.html">Bekijk alle workshops</a>
                 </button>
               </div>
               
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/geluid.jpg" alt="Geluidsbestanden bewerken" class="thumbnail">
-                <h3>Vertel het met... Geluid!</h3>
-                <p>
-                  Podcasts, interviews, storybooks… Geluid is overal. In deze workshop dompelen we jongeren onder in het creatieve proces van audio storytelling. Met enkel de smartphone in de hand, worden ze in no 
-                  time een futureproof storyteller met journalistieke skills!
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/geluid.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-  
-              <div class="workshops-card">
-                <iframe class="thumbnail" src="https://www.youtube.com/embed/EAyVjm7BYw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Zeg het met kleur: Een oog op kleur</h3>
-                <p>
-                  Een oog op kleur wordt verduidelijkt op welke manier we kleuren zien, beoordelen en erover communiceren. 
-                  We vertrekken van een mini-business-case die aansluit bij de leefwereld van jongeren en 
-                  brengen een aantal probleemstellingen naar voor rond kleur.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/kleur.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/onderneming.jpg" alt="Kleurcontrole" class="thumbnail">
-                <h3>Zeg het met kleur: Zet je onderneming in kleur</h3>
-                <p>
-                  Tijdens de workshop zoeken we uit wat de commerciële troeven van kleur zijn voor een onderneming en 
-                  geven we tips aan schoolondernemingen om extra succes te boeken met behulp van doordacht kleurgebruik.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/onderneming.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/druk.jpg" alt="Zeefdruk" class="thumbnail">
-                <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
-                <p>
-                  Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
-                  Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/print.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/deepfake.jpg" alt="Deepfake" class="thumbnail">
-                <h3>Deepdive into Deepfakes</h3>
-                <p>
-                  Duik eens in een deepfakes! Vertrekkende vanuit een korte inleiding rond wat machine learning is, willen we artificiële intelligentie &lsquo;demystifiyen&rsquo;. In een workshop van een 90-tal 
-                  minuten leer je hoe je zelf een deepfake kunnen maken
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/deepfake.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/extra.jpg" alt="Aula met studenten" class="thumbnail">
-                <h3>Gastles thema: domeinoverschrijdend</h3>
-                <p>
-                  Ben je op zoek naar een boeiende gastles binnen het thema communicatie, marketing, nieuws, media, 
-                  design, grafische technieken, fotografie of printmedia? Of wil je je lesonderwerp anders 
-                  aanpakken dan vorig jaar, maar mis je inspiratie? Dan werken we graag een lesvorm en -inhoud 
-                  uit op maat van je leerdoelen en leerlingen.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/extra.html">Meer info</a>
-                </button>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
       </section>
   
-      <section class="team sp_section">
-        <h2>Ontmoet ons team</h2>
+      <section class="team">
+        <div class="glider-contain multiple glider-contain-team">
 
-        <div class="team-container">
-          <div class="glider-contain multiple glider-contain-team">
-
-          
-            
-            <div class="glider-dots" id="dots-team"></div>
-          
-
+          <h2>Ontmoet ons team</h2>
+  
+          <div class="glider-dots" id="dots-team"></div>
+  
           <div class="glider" id="glider-team">
             <!-- // start card -->
             <div class="team-card">
-              <img src="assets/images/team/stefaan_anrys.jpg" alt="Stefaan Anrys">
+              <img src="assets/images/team/stefaan_anrys.png" alt="Stefaan Anrys">
               <div class="info">
                 <h4><span class="firstname">Stefaan</span>&nbsp;<span class="lastname">Anrys</span></h4>
                 <h5>Docent</h5>
@@ -250,6 +149,13 @@
                   <li>Bachelor Journalistiek</li>
                   <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>Programmeren</li>
+                  <li>Areas</li>
+                  <li>Sleaze</li>
+                  <li>Aze</li>
+                </ul> -->
               </div>
             </div>
 
@@ -263,6 +169,13 @@
                   <li>Graduaat Programmeren</li>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>Programmeren</li>
+                  <li>Web Design</li>
+                  <li>Sleaze</li>
+                  <li>Aze</li>
+                </ul> -->
               </div>
             </div>
             <!-- // end card -->
@@ -275,11 +188,18 @@
                 <ul>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>Programmeren</li>
+                  <li>Areas</li>
+                  <li>Sleaze</li>
+                  <li>Aze</li>
+                </ul> -->
               </div>
             </div>
   
             <div class="team-card">
-              <img src="assets/images/team/charlotte_van_acker.jpg" alt="Charlotte Van Acker">
+              <img src="assets/images/team/charlotte_van_acker.png" alt="Charlotte Van Acker">
               <div class="info">
                 <h4><span class="firstname">Charlotte</span>&nbsp;<span class="lastname">Van Acker</span></h4>
                 <h5>Docent</h5>
@@ -289,7 +209,43 @@
               </div>
             </div>
   
-        
+             <!--<div class="team-card">
+              <img src="assets/images/team/ZHMK-Inge-De-Canck.jpg" alt="Inge Decanck">
+              <div class="info">
+                <h4><span class="firstname">Inge</span>&nbsp;<span class="lastname">De Canck</span></h4>
+                <h5>Docent</h5>
+                <ul>
+                  <li>Graduaat Programmeren</li>
+                  <li>Bachelor Grafische en Digitale Media</li>
+                </ul>
+                <h5>Expertise</h5>
+                <ul>
+                  <li>Programmeren</li>
+                  <li>Areas</li>
+                  <li>Sleaze</li>
+                  <li>Aze</li>
+                </ul> 
+              </div>
+            </div>-->
+  <!--
+            <div class="team-card">
+              <img src="assets/images/team/tom_neuttiens.png" alt="Tom Neuttiens">
+              <div class="info">
+                <h4><span class="firstname">Tom</span>&nbsp;<span class="lastname">Neuttiens</span></h4>
+                <h5>Docent</h5>
+                <ul>
+                  <li>Expertisenetwerk Communicatie, Media en Design</li>
+                  <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
+                  <li>Bachelor Grafische en Digitale Media</li>
+                </ul>
+                 <h5>Expertise</h5>
+                <ul>
+                  <li>3D modeling</li>
+                  <li>3D printing</li>
+                </ul>
+              </div>
+            </div>-->
+          
             <div class="team-card">
               <img src="assets/images/team/ZHMK-kristin-van-damme.jpg" alt="Kristin Van Damme">
               <div class="info">
@@ -298,6 +254,15 @@
                 <ul>
                   <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>Artificiële intelligentie</li>
+                  <li>Nieuwservaring</li>
+                  <li>Storytelling</li>
+                  <li>Human centered design</li>
+                  <li>Sociale media</li>
+                  <li>Fake news</li>
+                </ul> -->
               </div>
             </div>
   
@@ -309,6 +274,11 @@
                 <ul>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>3D modeling</li>
+                  <li>3D printing</li>
+                </ul> -->
               </div>
             </div>
   
@@ -321,11 +291,15 @@
                   <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
+                <!-- <h5>Expertise</h5>
+                <ul>
+                  <li>3D modeling</li>
+                  <li>3D printing</li>
+                </ul> -->
               </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
     </main>
 
@@ -354,15 +328,20 @@
       </div>
     </footer>
     <!-- // FOOTER -->
-    <button aria-label="naar boven" id="totop" onclick="topFunction()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
     <script src="js/glider.min.js"></script>
-    <script src="js/slider-workshops.js"></script>
-    <script src="js/slider-team.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/hamburger.js"></script>
+
+    <script src="js/mediabox.min.js"></script>
+    <script src="js/main.js?27"></script>
+        <button aria-label="naar boven" id="totop" onclick="topFunction()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
     <script src="js/totop.js"></script>
     <script src="js/mobilemenu.js"></script>
-    <script defer src="js/cookieconsent.js"></script>
-    <script defer src="js/cookieconsent-init.js"></script>
+
+
+<script defer src="js/cookieconsent.js"></script>
+<script defer src="js/cookieconsent-init.js"></script>
 </body>
 </html>
