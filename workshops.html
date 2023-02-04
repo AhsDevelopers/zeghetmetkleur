@@ -49,18 +49,19 @@
 
     <div class="searchbar">
       <div class="searchbar-container">
-        <div class="keyword search-field">
+        <!--<div class="keyword search-field">
           <label for="keyword" style="margin-bottom: .5rem;">Zoek met trefwoord</label>
           <input type="text" name="keyword" id="keyword" placeholder="Trefwoord" style="padding: .3rem;">
-        </div>
+        </div>-->
 
         <div class="categories search-field">
-          <label for="categories" style="margin-bottom: .5rem;">Categorieën</label>
+          <label for="categories" style="margin-bottom: .5rem;">Kies een categorie</label>
           <select name="categories" id="categories" style="padding: .3rem;">
             <option value="all">Alle</option>
             <option value="3d">3D</option>
             <option value="code">Code</option>
-            <option value="sound">Geluid</option>
+            <option value="content">Content</option>
+            <option value="marketing">Marketing</option>
             <option value="color">Kleur</option>
             <option value="media">Media</option>
             <option value="extra">Extra</option>
@@ -73,7 +74,88 @@
   <main class="overview-page">
     <div class="workshops-container">
 
-      <!-- //01 start card -->
+
+      <!-- //card Contentcreatie -->
+      <div class="workshop content all">
+        <a href="./workshops/contentcreatie.html">
+          <img src="assets/images/workshop-details/contentcreatie/JOU 1-small-049.jpg" alt="Contentcreatie">
+        </a>
+        <div class="category">Content</div>
+        <h2 class="title">Contentcreatie</h2>
+        <p class="description">
+          Content is instant, op het moment dat iets gebeurt wil je kunnen communiceren. Daarom is content creatie on the go zo belangrijk, met je smartphone dus. In deze workshop wordt het belangrijkste van audio-, video- en fotocreatie met de smartphone toegelicht, waarbij studenten ook zelf aan de slag gaan.
+        </p>
+        <p>
+          <span class="bold">Verantwoordelijke docent</span><br>
+          Charlotte Van Acker
+        </p>
+        <p>
+          <span class="bold">Geschikt voor</span><br>
+          Derde graad van het secundair onderwijs
+        </p>
+        <p><button class="btn btn-small">
+          <a href="./workshops/contentcreatie.html">Meer info</a>
+        </button>
+      </p>
+        
+      </div>
+      <!-- // end card -->
+
+
+      <!-- // start card Influencermarketing -->
+      <div class="workshop marketing all">
+        <a href="./workshops/influencermarketing.html">
+          <img src="assets/images/workshop-details/influencemarketing/JOU 2-small-043.jpg" alt="Computer working space with 3D printer">
+        </a>
+        <div class="category">Marketing</div>
+        <h2 class="title">Influencermarketing</h2>
+        <p class="description">
+          Hoe kan je als merk jongeren bereiken via sociale media en influencers? We worden tegenwoordig overspoeld door reclame en tegelijkertijd hebben we nog nooit zo veel mogelijkheden gehad om reclame te ontwijken. Vooral jongeren blijken regelmatig ad blockers te installeren. Merken hebben het dus steeds moeilijker om deze doelgroep te bereiken. Anderzijds hebben ze meer mogelijkheden om jongeren digitaal te bereiken, bijvoorbeeld via sociale media en influencers. In deze workshop gaan we dieper in op jongeren, sociale media en influencers én werken we zelf een sociale media campagne uit. 
+        </p>
+        <p>
+          <span class="bold">Verantwoordelijke docent</span><br>
+          Charlotte Van Acker
+        </p>
+        <p>
+          <span class="bold">Geschikt voor</span><br>
+          Derde graad van het secundair onderwijs
+        </p>
+        <p><button class="btn btn-small">
+          <a href="./workshops/influencermarketing.html">Meer info</a>
+        </button></p>
+      </div>
+      <!-- // end card -->
+
+
+ <!-- // Card Fake News -->
+ <div class="workshop content all">
+  <a href="./workshops/fake-news.html">
+    <img src="assets/images/workshop-details/fake-news/JOU 2-small-076.jpg" alt="Computer working space with 3D printer">
+  </a>
+  <div class="category">Content</div>
+  <h2 class="title">Fake News</h2>
+  <p class="description">
+    “Is het echt waar?” De fake news en factchecking workshop. 
+    Veel jongeren halen hun nieuws vooral online, oa. op sociale media. Maar is nieuws daar wel altijd betrouwbaar? Aan de hand van concrete voorbeelden ontwikkelen de leerlingen in deze workshops een neus voor echt (en vals) nieuws. De leerlingen gaan naar huis met handige tips en tricks.      
+  </p>
+  <p>
+    <span class="bold">Verantwoordelijke docent</span><br>
+   Melanie Verstockt
+  </p>
+  <p>
+    <span class="bold">Geschikt voor</span><br>
+    Derde graad van het secundair onderwijs
+  </p>
+
+  <p>
+    <button class="btn btn-small">
+      <a href="./workshops/fake-news.html">Meer info</a>
+    </button>
+  </p>
+</div>
+<!-- // end card -->
+
+      <!-- //card Zeg het met 3D -->
       <div class="workshop 3d all">
         <a href="./workshops/3D.html">
           <img src="assets/images/workshops-overview/3d.jpg" alt="Computer working space with 3D printer">
@@ -91,54 +173,18 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs
         </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/communicatie-media-en-design" target="_blank">
-            Expertisenetwerk Communicatie, Media en Design <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
-          <a href="./workshops/3D.html">Meer info</a>
-        </button>
+        <p>
+          <button class="btn btn-small">
+            <a href="./workshops/3D.html">Meer info</a>
+          </button>
+        </p>
       </div>
       <!-- // end card -->
 
-      <!-- //02 start card -->
-      <div class="workshop image all">
-        <a href="./workshops/beeld.html">
-          <img src="assets/images/workshops-overview/beeld.jpg" alt="Pile of books">
-        </a>
-        <div class="category">Beeld</div>
-        <h2 class="title">Vertel het met... Beeld!</h2>
-        <p class="description">
-          Hoge kwaliteitsvideo’s maken met enkel je smartphone? Het kan! We zien het dagelijks passeren op TikTok en 
-          Reels, maar in deze workshop word ook jij de content creator van de toekomst. 
-          Monteren en bewerken met niks anders dan je smartphone? Yes, we can!
-        </p>
-        <p>
-          <span class="bold">Verantwoordelijke docent</span><br>
-          Stefaan Anrys
-        </p>
-        <p>
-          <span class="bold">Geschikt voor</span><br>
-          Derde graad van het secundair onderwijs
-        </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/multimediaproductie-keuzetraject-audiovisual-design" target="_blank">
-            Grafische en Digitale Media: Multimediaproductie (keuzetraject: Audiovisual Design) <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
-          <a href="./workshops/beeld.html">Meer info</a>
-        </button>
-      </div>
-      <!-- // end card -->
-
-      <!-- //03 start card -->
+      <!-- //card Start to Code: Creative Programming -->
       <div class="workshop code all">
         <a href="./workshops/creative-programming.html">
-          <img src="assets/images/workshops-overview/creative-programming.jpg" alt="Code on computer screen">
+          <img src="assets/images/workshops-overview/PGM-creative-programming.jpg" alt="Code on computer screen">
         </a>
         <div class="category">Code</div>
         <h2 class="title">Start to Code: Creative Programming</h2>
@@ -154,19 +200,15 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs
         </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/multimediaproductie-keuzetraject-new-media-development" target="_blank">
-            Grafische en Digitale Media: Multimediaproductie (keuzetraject: New Media Development) <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
+        <p>
+          <button class="btn btn-small">
           <a href="./workshops/creative-programming.html">Meer info</a>
         </button>
+        </p>
       </div>
       <!-- // end card -->
 
-
+      <!-- //card Start to Code: Web of Things -->
       <div class="workshop code all">
         <a href="./workshops/wot.html">
           <img src="assets/images/workshops-overview/wot.jpg" alt="Code on computer screen">
@@ -186,47 +228,15 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs
         </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/multimediaproductie-keuzetraject-new-media-development" target="_blank">
-            Grafische en Digitale Media: Multimediaproductie (keuzetraject: New Media Development) <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
-          <a href="./workshops/wot.html">Meer info</a>
-        </button>
-      </div>
-
-      <div class="workshop sound all">
-        <a href="./workshops/geluid.html">
-          <img src="assets/images/workshops-overview/geluid.jpg" alt="Soundwave editing">
-        </a>
-        <div class="category">Geluid</div>
-        <h2 class="title">Vertel het met... Geluid!</h2>
-        <p class="description">
-          Podcasts, interviews, storybooks… Geluid is overal. In deze workshop dompelen we jongeren onder in het 
-          creatieve proces van audio storytelling. Met enkel de smartphone in de hand, worden ze in no 
-          time een futureproof storyteller met journalistieke skills!
-        </p>
         <p>
-          <span class="bold">Verantwoordelijke docent</span><br>
-          Charlotte Van Acker
+          <button class="btn btn-small">
+            <a href="./workshops/wot.html">Meer info</a>
+          </button>
         </p>
-        <p>
-          <span class="bold">Geschikt voor</span><br>
-          Derde graad van het secundair onderwijs
-        </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/journalistiek" target="_blank">
-            Journalistiek <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
-          <a href="./workshops/geluid.html">Meer info</a>
-        </button>
       </div>
+      <!-- // end card -->
 
+      <!-- //card Zeg het met kleur: een oog op kleur -->
       <div class="workshop color all">
         <a href="./workshops/kleur.html">
           <img src="assets/images/workshops-overview/oog-op-kleur.jpg" alt="Printing">
@@ -246,11 +256,15 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
         </p>
-        <button class="btn btn-small">
-          <a href="./workshops/kleur.html">Meer info</a>
-        </button>
+        <p>
+          <button class="btn btn-small">
+            <a href="./workshops/kleur.html">Meer info</a>
+          </button>
+        </p>
       </div>
+<!-- // end card -->
 
+<!-- //card Zeg het met kleur: Zet je onderneming in kleur -->
       <div class="workshop color all">
         <a href="./workshops/onderneming.html">
           <img src="assets/images/workshops-overview/onderneming.jpg" alt="Checking colors" class="crosp">
@@ -269,11 +283,15 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
         </p>
-        <button class="btn btn-small">
-          <a href="./workshops/onderneming.html">Meer info</a>
-        </button>
+        <p>
+          <button class="btn btn-small">
+            <a href="./workshops/onderneming.html">Meer info</a>
+          </button>
+        </p>
       </div>
+<!-- // end card -->
 
+<!-- //card Zeg het met kleur: Zet je onderneming in kleur -->
       <div class="workshop color all">
         <a href="./workshops/print.html">
           <img src="assets/images/workshops-overview/druk.jpg" alt="Printing press">
@@ -292,49 +310,18 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
         </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/crossmedia-ontwerp" target="_blank">
-            Grafische en Digitale Media: Crossmedia-ontwerp <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
+        <p>
+          <button class="btn btn-small">
           <a href="./workshops/print.html">Meer info</a>
         </button>
+        </p>
       </div>
+<!-- // end card -->
 
-      <div class="workshop media all">
-        <a href="./workshops/deepfake.html">
-          <img src="assets/images/workshops-overview/deepfake.jpg" alt="Deepfake in dictionary">
-        </a>
-        <div class="category">Media</div>
-        <h2 class="title">Deepdive into Deepfakes</h2>
-        <p class="description">
-          Duik eens in een deepfakes! Vertrekkende vanuit een korte inleiding rond wat machine learning is, willen we 
-          artificiële intelligentie &lsquo;demystifiyen&rsquo;. In een workshop van een 90-tal minuten leer je hoe je zelf een deepfake kunt maken.
-        </p>
-        <p>
-          <span class="bold">Verantwoordelijke docent</span><br>
-          Kristin Van Damme
-        </p>
-        <p>
-          <span class="bold">Geschikt voor</span><br>
-          Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
-        </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/opleidingen/bachelor/journalistiek" target="_blank">
-            Journalistiek<i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
-          <a href="./workshops/deepfake.html">Meer info</a>
-        </button>
-      </div>
-
+<!-- //card Machine Learning -->
       <div class="workshop code media all">
         <a href="./workshops/machinelearning.html">
-          <img src="assets/images/workshops-overview/teachablemachine.png" alt="Teachable machine">
+          <img src="assets/images/workshop-details/programming/PGM-workshops-037.jpg" alt="Teachable machine">
         </a>
         <div class="category">Code</div>
         <h2 class="title">Machine Learning</h2>
@@ -350,11 +337,15 @@
           Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
         </p>
         
-        <button class="btn btn-small">
-          <a href="./workshops/machinelearning.html">Meer info</a>
-        </button>
+        <p>
+          <button class="btn btn-small">
+            <a href="./workshops/machinelearning.html">Meer info</a>
+          </button>
+        </p>
       </div>
-      
+   <!-- // end card -->
+
+<!-- //card Gastles thema: domeinoverschrijdend -->   
       <div class="workshop extra all">
         <a href="./workshops/extra.html">
           <img src="assets/images/workshops-overview/extra.jpg" alt="Students in auditorium">
@@ -376,17 +367,16 @@
           <span class="bold">Geschikt voor</span><br>
           Derde graad van het secundair onderwijs + leerkrachten = Train The Trainer (TTT)
         </p>
-        <!-- <p>
-          <span class="bold">Richting</span><br>
-          <a href="https://www.arteveldehogeschool.be/communicatie-media-en-design" target="_blank">
-            Expertisenetwerk Communicatie, Media en Design <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p> -->
-        <button class="btn btn-small">
+        <p>
+          <button class="btn btn-small">
           <a href="./workshops/extra.html">Meer info</a>
         </button>
+        </p>
+        <br>
       </div>
+      <br>
     </div>
+    <br>
   </main>
 
  <!-- FOOTER -->

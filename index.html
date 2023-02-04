@@ -34,7 +34,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/cookieconsent.css" media="print" onload="this.media='all'">
-  </head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
 
 <body>
     <header>
@@ -74,11 +76,11 @@
         <div class="text-section">
           <h1 class="serif">Zeg het met kleur</h1>
             <p style="padding-bottom: 1rem;">
-            We stellen u graag de workshops Zeg het met 3D, Code, Kleur, Beeld en geluid voor.
+            We stellen u graag de workshops <strong>Zeg het met kleur</strong> voor.
             </p>
 
             <p style="padding-bottom: 1rem;">
-            De workshops spelen in op de groeiende nood aan mediawijsheid en interesse voor media bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
+            De workshops spelen in op de groeiende nood aan <strong>mediawijsheid</strong> en <strong>interesse voor media</strong> bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
           </p>
 
           <button class="btn btn-regular">
@@ -88,46 +90,80 @@
       </section>
   
 
-      <section class="workshops sp_section">
-        <h2>Workshops</h2>
+      <section class="workshops">
+        
   
+        <!-- Slider main container -->
         <div class="workshops-container">
-          <div class="workshops-grid">
-            <div class="workshops-card">
-              <img src="assets/images/workshops-overview/druk.jpg" alt="Zeefdruk" class="thumbnail">
-              <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
+
+          <div class="cards-container">
+
+          
+        <div class="cards">
+          <p class="cards__note"><h2>Workshops</h2></p>
+          <div class="cards__body">
+            <!-- card item 1 -->
+            <div class="cards__item">
+              <div class="m-card" ontouchstart>
+                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/PGM-workshops.jpg');"></div>
+                <div class="m-card__body">
+                  <h3>Bekijk alle workshops</h3>
+                <p>
+                  We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.
+                
+                </p>
+                <p>
+                  <button class="btn btn-small">
+                    <a href="workshops.html">Bekijk alle workshops</a>
+                  </button>
+                </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cards__item">
+              <div class="m-card" ontouchstart>
+                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/druk.jpg');"></div>
+                <div class="m-card__body">
+                  <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
               <p>
                 Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
                 Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.
               </p>
-              <button class="btn btn-small">
-                <a href="workshops/print.html">Meer info</a>
-              </button>
+              <p>
+                <button class="btn btn-small">
+                  <a href="workshops/print.html">Meer info</a>
+                </button>
+              </p>
+              
+                </div>
+              </div>
             </div>
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/wot.jpg" alt="Code op scherm" class="thumbnail">
-                <h3>Start-to-Code: Creative Programming</h3>
+
+            <div class="cards__item">
+              <div class="m-card" ontouchstart>
+                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/PGM-creative-programming.jpg');"></div>
+                <div class="m-card__body">
+                  <h3>Start-to-Code: Creative Programming</h3>
                 <p>
                   Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.
                 </p>
-                <button class="btn btn-small">
-                  <a href="workshops/creative-programming.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card ">
-                <img src="assets/images/workshop-details/machinelearning/workshop.png" alt="Workshops" class="thumbnail">
-                <h3>Bekijk alle workshops</h3>
+
                 <p>
-                  We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.
+                  <button class="btn btn-small">
+                    <a href="workshops/creative-programming.html" title="Meer info">Meer info</a>
+                  </button>
                 </p>
-                <button class="btn btn-small">
-                  <a href="workshops.html">Bekijk alle workshops</a>
-                </button>
+                
+                </div>
               </div>
-              
-        </div>
-        </div>
+            </div>
+            
+          </div><!-- .cards__body // -->
+        </div><!-- .cards // -->
+      </div>
+      </div>
       </section>
   
       <section class="team">
@@ -137,36 +173,36 @@
           <button aria-label="Vorige" class="glider-prev">«</button>
           <button aria-label="Volgende" class="glider-next">»</button>
 
-          <div class="glider-dots" id="dots-team"></div>
-  
           <div class="glider" id="glider-team">
-
-
-
-
-            <!-- // start card -->
             <div class="team-card">
-              <img src="assets/images/team/stefaan_anrys.jpg" alt="Stefaan Anrys">
+              <img src="assets/images/team/ZegHetMetKleur-Jonas Borms.jpg" alt="Jonas Borms">
               <div class="info">
-                <h4><span class="firstname">Stefaan</span>&nbsp;<span class="lastname">Anrys</span></h4>
-                <h5>Docent</h5>
+                <h4><span class="firstname">Jonas</span>&nbsp;<span class="lastname">Borms</span></h4>
+                <h5>Onderzoeker</h5>
                 <ul>
-                  <li>Bachelor Journalistiek</li>
-                  <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
+                  <li>Onderzoeker en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
                 </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>Programmeren</li>
-                  <li>Areas</li>
-                  <li>Sleaze</li>
-                  <li>Aze</li>
-                </ul> -->
               </div>
             </div>
+            <!-- // end card -->
 
 
             <div class="team-card">
-              <img src="assets/images/team/ZHMK-Philippe-De-Pauw-Waterschoot.jpg" alt="Philippe De Pauw">
+              <img src="assets/images/team/ZegHetMetKleur-Ann Dehaemers.jpeg" alt="Ann Dehaemers">
+              <div class="info">
+                <h4><span class="firstname">Ann</span>&nbsp;<span class="lastname">Dehaemers</span></h4>
+                <h5>Docent</h5>
+                <ul>
+                  <li>Bachelor Grafische en Digitale Media</li>
+                </ul>
+              </div>
+            </div>
+            <!-- // end card -->
+
+           
+
+            <div class="team-card">
+              <img src="assets/images/team/ZegHetMetKleur-Philippe-De-Pauw-Waterschoot.jpg" alt="Philippe De Pauw">
               <div class="info">
                 <h4><span class="firstname">Philippe</span>&nbsp;<span class="lastname">De Pauw</span></h4>
                 <h5>Docent</h5>
@@ -174,37 +210,48 @@
                   <li>Graduaat Programmeren</li>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>Programmeren</li>
-                  <li>Web Design</li>
-                  <li>Sleaze</li>
-                  <li>Aze</li>
-                </ul> -->
               </div>
             </div>
             <!-- // end card -->
 
             <div class="team-card">
-              <img src="assets/images/team/annelien_suenaert.jpg" alt="Annelien Suenaert">
+              <img src="assets/images/team/ZegHetMetKleur-Dieter De Weirdt.jpg" alt="Dieter De Weirdt">
+              <div class="info">
+                <h4><span class="firstname">Dieter</span>&nbsp;<span class="lastname">De Weirdt</span></h4>
+                <h5>Docent</h5>
+                <ul>
+                  <li>Graduaat Programmeren</li>
+                  <li>Bachelor Grafische en Digitale Media</li>
+                </ul>
+              </div>
+            </div>
+            <!-- // end card -->
+
+            <div class="team-card">
+              <img src="assets/images/team/ZegHetMetKleur-Frederick-Roegiers.jpeg" alt="Frederick Roegiers">
+              <div class="info">
+                <h4><span class="firstname">Frederick</span>&nbsp;<span class="lastname">Roegiers</span></h4>
+                <h5>Docent</h5>
+                <ul>
+                  <li>Graduaat Programmeren</li>
+                  <li>Bachelor Grafische en Digitale Media</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/images/team/ZegHetMetKleur-annelien_suenaert.jpg" alt="Annelien Suenaert">
               <div class="info">
                 <h4><span class="firstname">Annelien</span>&nbsp;<span class="lastname">Suenaert</span></h4>
                 <h5>Docent</h5>
                 <ul>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>Programmeren</li>
-                  <li>Areas</li>
-                  <li>Sleaze</li>
-                  <li>Aze</li>
-                </ul> -->
               </div>
             </div>
   
             <div class="team-card">
-              <img src="assets/images/team/charlotte_van_acker.jpg" alt="Charlotte Van Acker">
+              <img src="assets/images/team/ZegHetMetKleur-charlotte_van_acker.jpg" alt="Charlotte Van Acker">
               <div class="info">
                 <h4><span class="firstname">Charlotte</span>&nbsp;<span class="lastname">Van Acker</span></h4>
                 <h5>Docent</h5>
@@ -213,94 +260,30 @@
                 </ul>
               </div>
             </div>
-  
-             <!--<div class="team-card">
-              <img src="assets/images/team/ZHMK-Inge-De-Canck.jpg" alt="Inge Decanck">
-              <div class="info">
-                <h4><span class="firstname">Inge</span>&nbsp;<span class="lastname">De Canck</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Graduaat Programmeren</li>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-                <h5>Expertise</h5>
-                <ul>
-                  <li>Programmeren</li>
-                  <li>Areas</li>
-                  <li>Sleaze</li>
-                  <li>Aze</li>
-                </ul> 
-              </div>
-            </div>-->
-  <!--
-            <div class="team-card">
-              <img src="assets/images/team/tom_neuttiens.png" alt="Tom Neuttiens">
-              <div class="info">
-                <h4><span class="firstname">Tom</span>&nbsp;<span class="lastname">Neuttiens</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Expertisenetwerk Communicatie, Media en Design</li>
-                  <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-                 <h5>Expertise</h5>
-                <ul>
-                  <li>3D modeling</li>
-                  <li>3D printing</li>
-                </ul>
-              </div>
-            </div>-->
-          
-            <div class="team-card">
-              <img src="assets/images/team/ZHMK-kristin-van-damme.jpg" alt="Kristin Van Damme">
-              <div class="info">
-                <h4><span class="firstname">Kristin</span>&nbsp;<span class="lastname">Van Damme</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
-                </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>Artificiële intelligentie</li>
-                  <li>Nieuwservaring</li>
-                  <li>Storytelling</li>
-                  <li>Human centered design</li>
-                  <li>Sociale media</li>
-                  <li>Fake news</li>
-                </ul> -->
-              </div>
-            </div>
+         
   
             <div class="team-card">
-              <img src="assets/images/team/ZHMK-Eva-Vande-Populiere.jpg" alt="Eva Vande Populiere">
+              <img src="assets/images/team/ZegHetMetKleur-Eva-Vande-Populiere.jpg" alt="Eva Vande Populiere">
               <div class="info">
                 <h4><span class="firstname">Eva</span>&nbsp;<span class="lastname">Vande Populiere</span></h4>
                 <h5>Docent</h5>
                 <ul>
                   <li>Bachelor Grafische en Digitale Media</li>
                 </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>3D modeling</li>
-                  <li>3D printing</li>
-                </ul> -->
+
               </div>
             </div>
   
             <div class="team-card">
-              <img src="assets/images/team/ZHMK-Melanie-Verstockt.jpg" alt="Melanie Verstockt">
+              <img src="assets/images/team/ZegHetMetKleur-Melanie-Verstockt.jpg" alt="Melanie Verstockt">
               <div class="info">
                 <h4><span class="firstname">Melanie</span>&nbsp;<span class="lastname">Verstockt</span></h4>
-                <h5>Docent</h5>
+                <h5>Medewerker</h5>
                 <ul>
-                  <li>Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
                   <li>Bachelor Grafische en Digitale Media</li>
+                  <li>Expertisenetwerk Communicatie, Media en Design</li>
                 </ul>
-                <!-- <h5>Expertise</h5>
-                <ul>
-                  <li>3D modeling</li>
-                  <li>3D printing</li>
-                </ul> -->
+
               </div>
             </div>
           </div>
@@ -348,5 +331,8 @@
 
 <script defer src="js/cookieconsent.js"></script>
 <script defer src="js/cookieconsent-init.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
 </body>
 </html>

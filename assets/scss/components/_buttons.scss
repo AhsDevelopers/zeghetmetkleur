@@ -6,27 +6,28 @@
 @import '../abstracts/variables';
 
 .btn {
-  border: 0;
   cursor: pointer;
-  background-color: $color-black;
-  border-radius: 4px;
+  border-radius: .3em;
+  background-color: $color-white;
+    
+    border: 1px solid $color-black;
 
   &:hover,
   &:focus {
-    background-color: $color-white;
-    color: $color-black;
+    background-color: $color-black;
     border: 1px solid $color-black;
+    
     a {
-      color: $color-black;
+      color: $color-white;
     }
   }
 
   a {
-    color: $color-white;
-    font-weight: $font-weight-black;
+    color: $color-black;
+    font-weight: $font-weight-regular;
     &:hover,
     &:focus {
-      color: $color-black;
+      color: $color-white;
     }
   }
 }
@@ -38,11 +39,11 @@
     font-size: 1rem;
     &:hover,
     &:focus {
-      color: $color-black;
+      color: $color-white;
     }
   }
 }
 
 .btn-small {
-  padding: .5em 2em;
+  padding: .8em 2em;
 }

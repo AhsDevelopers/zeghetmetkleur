@@ -6,8 +6,6 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
-
-
 @include small {
   main.homepage {
     .intro.sp_section {
@@ -42,7 +40,7 @@
     }
 
     .workshops {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
 
       h2 {
@@ -53,7 +51,7 @@
       .workshops-container {
         width: 90%;
         margin-left: 0;
-        padding: .5em 1em 0 1em;
+        padding: .5em 0 0 1em;
 
         .glider-contain.glider-contain-workshops {
           .glider-dots {
@@ -112,7 +110,7 @@
       
       .text-section {
         h1 {
-          @include title-medium();
+          @include title-small();
         }
       }
     }
@@ -123,7 +121,7 @@
 
     .workshops {
       h2 {
-        @include title-medium();
+        @include title-small();
         margin-left: 5em;
       }
 
@@ -145,7 +143,7 @@
 
     .team {
       h2 {
-        @include title-medium();
+        @include title-small();
       }
 
       .glider-contain.glider-contain-team {
@@ -191,7 +189,7 @@
         margin-top: -2.5em;
   
         h1 {
-          @include title();
+          @include title-small();
         }
   
         p {
@@ -201,28 +199,34 @@
       }
     }
   
-    .orange-block {
-      height: 1350px;
-      background-color: $color-orange-medium;
+    /*.orange-block {
+      height: 2300px;
+      /*background-color: $color-orange-medium;
+      background: rgb(245,135,50);
+      background: linear-gradient(90deg, rgba(245,135,50,0.1) 35%, rgba(245,135,50,0.2) 100%);
       width: 12.5%;
       position: absolute;
       z-index: -1;
-      margin-top: -2em;
-    }
+      margin-top: 0;
+    }*/
   
     .workshops {
       h2 {
-        @include title();
-        margin-left: 7em;
+        @include title-small();
       }
   
       .workshops-container {
         background-color: $color-gray-light;
-        width: 75%;
-        margin-left: 12.5%;
-        margin-top: -1em;
-        padding: 2em 1em 1em 7.5em;
+        width: 100%;
+        
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: 2em 1em 6em 0;
   
+        .cards-container{
+          width: 80%;
+          margin: 0 auto;
+        }
         .glider-contain.glider-contain-workshops {
           .glider-dots {
             margin-top: -1em;
@@ -265,7 +269,7 @@
   
     .team {
       h2 {
-        @include title();
+        @include title-small();
         text-align: center;
         margin-top: 2em;
         span{
@@ -284,8 +288,8 @@
           .glider-dot {
             width: 2em !important;
             height: 2em !important;
-            -webkit-box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.2); 
-            box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.2);
+            -webkit-box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.1); 
+            box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.1);
             background: none !important;
   
             &.active,
@@ -300,7 +304,7 @@
           
           .team-card {
             background-color: $color-gray-light;
-            padding-bottom: 1em;
+            padding-bottom: 0.5em;
             margin: 8em 1em 0 1em;
             height: auto;
   
@@ -308,7 +312,7 @@
               margin-top: -7.5em;
               width: 100%;
               height: 50%;
-              border-radius: 100%;
+
               object-fit: cover;
               object-position: 0 0;
               overflow: hidden;
@@ -326,6 +330,8 @@
   
               h4 {
                 margin-top: 1rem;
+                font-size: 1rem;
+                font-weight: $font-weight-light;
               }
   
               h5 {
@@ -338,7 +344,7 @@
                 margin-top: -1.5em;
                 line-height: 1.5;
                 li {
-                  font-size: 1.2rem;
+                  font-size: 1.1rem;
                 }
               }
   

@@ -40,19 +40,22 @@ section.intro {
 }
 
 main.overview-page {
+  background-color: $color-gray-light;
+
   .workshops-container {
     width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5em 1em;
-    margin-top: 3em;
+    padding-top: 3em;
     z-index: 1;
     position: relative;
 
     .workshop {
       width: 100%;
       position: relative;
+      background: $color-white;
 
       &.hide {
         display: none
@@ -60,6 +63,7 @@ main.overview-page {
       
       img {
         max-width: 100%;
+        object-fit: cover;
         /*height: 42.5%;*/
       }
 
@@ -71,7 +75,7 @@ main.overview-page {
         color: $color-white;
         padding: .2em 1.5em;
         font-size: 25px;
-        font-weight: $font-weight-black;
+        font-weight: $font-weight-regular;
         border-radius: .3em;
 
         &::after {
@@ -80,18 +84,21 @@ main.overview-page {
       }
 
       .title {
-        font-size: 28px;
-        font-weight: $font-weight-bold;
+        font-size: 2rem;
+        font-weight: $font-weight-regular;
+        padding: 0 1rem;
       }
 
       .subtitle {
         font-size: 25px;
         font-weight: $font-weight-bold;
         margin-top: -1em;
+        padding: 0 1rem;
       }
 
       p {
-        font-size: 18px;
+        font-size: 1rem;
+        padding: 0 1rem;
       }
 
       .bold {

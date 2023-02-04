@@ -8,10 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -46,12 +44,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -59,10 +54,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -79,12 +72,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +92,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +143,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +154,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +163,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -189,9 +171,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +181,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +192,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,18 +212,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -262,19 +238,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -282,17 +256,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -301,10 +273,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -362,7 +332,8 @@ p {
 h1 {
   font-family: "Source Serif Pro", sans-serif;
   font-style: normal;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -387,63 +358,53 @@ header {
   background-color: #FFFFFF;
   z-index: 10;
 }
-
 header .header-container {
   display: flex;
   justify-content: space-between;
   width: 85%;
   margin: 1em auto;
 }
-
 header .header-container .logo-block {
   margin-left: 3em;
 }
-
 header .header-container .logo-block .logo-artevelde {
   width: 200px;
   margin-top: 2em;
 }
-
 header .header-container .logo-block .logo {
   width: 200px;
   margin-left: 5em;
   margin-top: 1em;
 }
-
 header .header-container nav {
   width: 30%;
   margin-top: 3em;
   margin-bottom: 3em;
 }
-
 header .header-container nav ul {
   display: flex;
   justify-content: flex-end;
 }
-
 header .header-container nav ul li:last-child {
   margin-left: 10%;
 }
-
 header .header-container nav ul li a {
   font-size: 30px;
   font-weight: 900;
   color: #1a1a1a;
-  padding: .05em .5em;
-  border-radius: .3em;
+  padding: 0.05em 0.5em;
+  border-radius: 0.3em;
   position: relative;
   display: block;
   min-width: 100px;
   text-align: center;
 }
-
 header .header-container nav ul li a:hover, header .header-container nav ul li a:focus {
   background-color: #F69142;
   color: #FFFFFF;
 }
-
 header .header-container nav ul li a:hover::after, header .header-container nav ul li a:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 20%;
@@ -456,14 +417,12 @@ header .header-container nav ul li a:hover::after, header .header-container nav 
   margin-left: -0.312em;
   margin-bottom: -0.625em;
 }
-
 header .header-container nav ul li a.active {
   background-color: #F69142;
   color: #FFFFFF;
 }
-
 header .header-container nav ul li a.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 20%;
@@ -476,7 +435,6 @@ header .header-container nav ul li a.active::after {
   margin-left: -0.312em;
   margin-bottom: -0.625em;
 }
-
 header .header-container .hamburger {
   display: none;
 }
@@ -525,12 +483,11 @@ header .header-container .hamburger {
   }
   header .header-container .hamburger {
     display: block;
-    margin-top: .75em;
-    margin-right: .5em;
+    margin-top: 0.75em;
+    margin-right: 0.5em;
     font-size: 30px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   header .header-container {
     width: 95%;
@@ -559,10 +516,9 @@ header .header-container .hamburger {
   }
   header .header-container nav ul li a {
     font-size: 25px;
-    padding: .05em .5em;
+    padding: 0.05em 0.5em;
   }
 }
-
 .sp_section {
   margin-bottom: 2rem;
 }
@@ -575,54 +531,43 @@ footer {
   background-color: #1a1a1a;
   margin-top: 5em;
 }
-
 footer .footer-container {
   width: 80%;
   margin: 0 auto;
   padding: 1em 0 5em 0;
 }
-
 footer .footer-container a {
   color: #FFFFFF;
 }
-
 footer .footer-container a:hover, footer .footer-container a:focus {
   border-bottom: 2px solid #FFFFFF;
 }
-
 footer .footer-container a.active {
   border-bottom: 4px solid #FFFFFF;
 }
-
 footer .footer-container h2 {
   color: #FFFFFF;
   font-size: 2rem;
   text-transform: capitalize;
 }
-
 footer .footer-container ul {
   padding: 0;
   margin: 0 0 2em 0;
 }
-
 footer .footer-container ul li {
   display: inline;
   padding-right: 1em;
 }
-
 footer .footer-container ul li a {
   color: #FFFFFF;
   font-size: 2rem;
 }
-
 footer .footer-container ul li a:hover, footer .footer-container ul li a:focus {
   border-bottom: 4px solid #FFFFFF;
 }
-
 footer .footer-container ul li a.active {
   border-bottom: 4px solid #FFFFFF;
 }
-
 footer .footer-container p {
   color: #FFFFFF;
 }
@@ -638,7 +583,6 @@ footer .footer-container p {
     font-size: 1rem;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   footer .footer-container h2 {
     font-size: 3rem;
@@ -650,7 +594,6 @@ footer .footer-container p {
     font-size: 1rem;
   }
 }
-
 #totop {
   right: 1rem;
   cursor: pointer;
@@ -692,45 +635,38 @@ footer .footer-container p {
 }
 
 .btn {
-  border: 0;
   cursor: pointer;
-  background-color: #1a1a1a;
-  border-radius: 4px;
-}
-
-.btn:hover, .btn:focus {
+  border-radius: 0.3em;
   background-color: #FFFFFF;
-  color: #1a1a1a;
   border: 1px solid #1a1a1a;
 }
-
+.btn:hover, .btn:focus {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
 .btn:hover a, .btn:focus a {
-  color: #1a1a1a;
-}
-
-.btn a {
   color: #FFFFFF;
-  font-weight: 900;
 }
-
-.btn a:hover, .btn a:focus {
+.btn a {
   color: #1a1a1a;
+  font-weight: 400;
+}
+.btn a:hover, .btn a:focus {
+  color: #FFFFFF;
 }
 
 .btn-regular {
-  padding: .8em 2.5em;
+  padding: 0.8em 2.5em;
 }
-
 .btn-regular a {
   font-size: 1rem;
 }
-
 .btn-regular a:hover, .btn-regular a:focus {
-  color: #1a1a1a;
+  color: #FFFFFF;
 }
 
 .btn-small {
-  padding: .5em 2em;
+  padding: 0.8em 2em;
 }
 
 .sp_section {
@@ -764,8 +700,9 @@ footer .footer-container p {
   main.homepage .intro.sp_section .text-section h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.homepage .intro.sp_section .text-section .btn-regular {
     display: block;
@@ -775,20 +712,21 @@ footer .footer-container p {
     display: none;
   }
   main.homepage .workshops {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   main.homepage .workshops h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
     margin-left: 0;
   }
   main.homepage .workshops .workshops-container {
     width: 90%;
     margin-left: 0;
-    padding: .5em 1em 0 1em;
+    padding: 0.5em 0 0 1em;
   }
   main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
     margin-top: 1em;
@@ -803,8 +741,9 @@ footer .footer-container p {
   main.homepage .team h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider-dots {
     margin-top: 1em;
@@ -815,36 +754,13 @@ footer .footer-container p {
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
     width: 25em !important;
-    margin: 6em .5em 0 .5em;
+    margin: 6em 0.5em 0 0.5em;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
     height: 30%;
     margin-top: -5.5em;
   }
-  main.homepage .workshops .workshops-container .workshops-grid {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  main.homepage .workshops .workshops-container .workshops-grid .workshops-card:last-child {
-    background: rgba(200,100,0,.2);
-    padding: 1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-  main.homepage .workshops .workshops-container  .workshops-card {
-    width: 100%;
-    margin-right: 1em;
-    margin-bottom: 1rem;
-  }
-  main.homepage .workshops .workshops-container  .workshops-card .thumbnail {
-    max-width: 100%;
-    height: 45%;
-    object-fit: cover;
-    object-position: 0 0;
-  }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   main.homepage .intro {
     width: 95%;
@@ -855,8 +771,9 @@ footer .footer-container p {
   main.homepage .intro .text-section h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 36px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.homepage .orange-block {
     height: 1100px;
@@ -864,12 +781,13 @@ footer .footer-container p {
   main.homepage .workshops h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 36px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
     margin-left: 5em;
   }
   main.homepage .workshops .workshops-container {
-    padding: .5em 1em 1em 1em;
+    padding: 0.5em 1em 1em 1em;
   }
   main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
     margin-top: 1em;
@@ -881,8 +799,9 @@ footer .footer-container p {
   main.homepage .team h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 36px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
     width: 1.5em !important;
@@ -892,27 +811,20 @@ footer .footer-container p {
     height: 35%;
     margin-top: -6em;
   }
-  main.homepage .workshops .workshops-container .workshops-grid {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  main.homepage .workshops .workshops-container .workshops-grid .workshops-card:last-child {
-    background: rgba(200,100,0,.2);
-    padding: 1rem;
-  }
-  main.homepage .workshops .workshops-container  .workshops-card {
-    width: 33%;
-    margin-right: 1em;
-  }
-  main.homepage .workshops .workshops-container  .workshops-card .thumbnail {
-    max-width: 100%;
-    height: 45%;
-    object-fit: cover;
-    object-position: 0 0;
-  }
 }
-
 @media (min-width: 1024px) {
+  main.homepage {
+    /*.orange-block {
+      height: 2300px;
+      /*background-color: $color-orange-medium;
+      background: rgb(245,135,50);
+      background: linear-gradient(90deg, rgba(245,135,50,0.1) 35%, rgba(245,135,50,0.2) 100%);
+      width: 12.5%;
+      position: absolute;
+      z-index: -1;
+      margin-top: 0;
+    }*/
+  }
   main.homepage .intro {
     width: 85%;
     margin: 3em auto;
@@ -934,34 +846,31 @@ footer .footer-container p {
   main.homepage .intro .text-section h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.homepage .intro .text-section p {
     font-size: 16px;
     margin-top: -1em;
   }
-  main.homepage .orange-block {
-    height: 1350px;
-    background-color: #F9B784;
-    width: 12.5%;
-    position: absolute;
-    z-index: -1;
-    margin-top: -2em;
-  }
   main.homepage .workshops h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1;
-    margin-left: 7em;
+    font-weight: 400;
   }
   main.homepage .workshops .workshops-container {
-    background-color: #F8f8f8;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-top: -1em;
-    padding: 2em 1em 1em 7.5em;
+    background-color: #F9fafb;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2em 1em 6em 0;
+  }
+  main.homepage .workshops .workshops-container .cards-container {
+    width: 80%;
+    margin: 0 auto;
   }
   main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
     margin-top: -1em;
@@ -980,19 +889,11 @@ footer .footer-container p {
     height: auto;
     padding-bottom: 5rem;
   }
-  main.homepage .workshops .workshops-container .workshops-grid {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  main.homepage .workshops .workshops-container .workshops-grid .workshops-card:last-child {
-    background: rgba(200,100,0,.2);
-    padding: 1rem;
-  }
-  main.homepage .workshops .workshops-container  .workshops-card {
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card {
     width: 33%;
     margin-right: 1em;
   }
-  main.homepage .workshops .workshops-container  .workshops-card .thumbnail {
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card .thumbnail {
     max-width: 100%;
     height: 45%;
     object-fit: cover;
@@ -1001,8 +902,9 @@ footer .footer-container p {
   main.homepage .team h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
     text-align: center;
     margin-top: 2em;
   }
@@ -1020,15 +922,16 @@ footer .footer-container p {
   main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
     width: 2em !important;
     height: 2em !important;
-    box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+    -webkit-box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.1);
+    box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.1);
     background: none !important;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot.active, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:hover, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:focus {
     background: #F69142 !important;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
-    background-color: #F8f8f8;
-    padding-bottom: 1em;
+    background-color: #F9fafb;
+    padding-bottom: 0.5em;
     margin: 8em 1em 0 1em;
     height: auto;
   }
@@ -1036,7 +939,6 @@ footer .footer-container p {
     margin-top: -7.5em;
     width: 100%;
     height: 50%;
-    border-radius: 100%;
     object-fit: cover;
     object-position: 0 0;
     overflow: hidden;
@@ -1046,12 +948,14 @@ footer .footer-container p {
     margin: 0 auto 0 auto;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .firstname,
-  main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
     font-size: 2rem;
     line-height: 1;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h4 {
     margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h5 {
     font-size: 1.2rem;
@@ -1063,14 +967,13 @@ footer .footer-container p {
     line-height: 1.5;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info p {
     font-size: 1.2rem;
     margin-top: -1.5em;
   }
 }
-
 .sp_section {
   margin-bottom: 2rem;
 }
@@ -1090,72 +993,67 @@ section.intro > h1 {
   line-height: 1;
   text-align: center;
 }
-
 section.intro .searchbar {
-  background-color: #F8f8f8;
+  background-color: #F9fafb;
 }
-
 section.intro .searchbar-container {
   width: 90%;
   margin: 0 auto;
   padding: 2em 0;
   display: flex;
 }
-
 section.intro .searchbar-container .keyword {
   margin-right: 2em;
 }
-
 section.intro .searchbar label {
   display: block;
   font-size: 20px;
   font-weight: 700;
 }
-
 section.intro .searchbar input,
 section.intro .searchbar select {
   width: 12.5em;
 }
 
+main.overview-page {
+  background-color: #F9fafb;
+}
 main.overview-page .workshops-container {
   width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5em 1em;
-  margin-top: 3em;
+  padding-top: 3em;
   z-index: 1;
   position: relative;
 }
-
 main.overview-page .workshops-container .workshop {
   width: 100%;
   position: relative;
+  background: #FFFFFF;
 }
-
 main.overview-page .workshops-container .workshop.hide {
   display: none;
 }
-
 main.overview-page .workshops-container .workshop img {
   max-width: 100%;
+  object-fit: cover;
   /*height: 42.5%;*/
 }
-
 main.overview-page .workshops-container .workshop .category {
   position: absolute;
   top: 1em;
   right: 1em;
   background-color: #7E57C5;
   color: #FFFFFF;
-  padding: .2em 1.5em;
+  padding: 0.2em 1.5em;
   font-size: 25px;
-  font-weight: 900;
-  border-radius: .3em;
+  font-weight: 400;
+  border-radius: 0.3em;
 }
-
 main.overview-page .workshops-container .workshop .category::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 20%;
@@ -1168,26 +1066,24 @@ main.overview-page .workshops-container .workshop .category::after {
   margin-left: -0.312em;
   margin-bottom: -0.625em;
 }
-
 main.overview-page .workshops-container .workshop .title {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 1rem;
 }
-
 main.overview-page .workshops-container .workshop .subtitle {
   font-size: 25px;
   font-weight: 700;
   margin-top: -1em;
+  padding: 0 1rem;
 }
-
 main.overview-page .workshops-container .workshop p {
-  font-size: 18px;
+  font-size: 1rem;
+  padding: 0 1rem;
 }
-
 main.overview-page .workshops-container .workshop .bold {
   font-weight: 700;
 }
-
 main.overview-page .workshops-container .workshop .btn {
   margin-top: 1em;
 }
@@ -1196,19 +1092,20 @@ main.overview-page .workshops-container .workshop .btn {
   section.intro > h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   section.intro .searchbar-container {
     flex-direction: column;
     padding: 1em 0;
   }
   section.intro .searchbar-container .keyword {
-    margin-right: .5em;
+    margin-right: 0.5em;
     margin-bottom: 1em;
   }
   section.intro .searchbar-container .search-field input,
-  section.intro .searchbar-container .search-field select {
+section.intro .searchbar-container .search-field select {
     width: 100%;
   }
   main.overview-page .workshops-container {
@@ -1217,13 +1114,13 @@ main.overview-page .workshops-container .workshop .btn {
     margin-bottom: 10em;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   section.intro > h1 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
   }
   main.overview-page .workshops-container {
     grid-template-columns: 1fr 1fr;
@@ -1231,7 +1128,6 @@ main.overview-page .workshops-container .workshop .btn {
     margin-bottom: 10em;
   }
 }
-
 .sp_section {
   margin-bottom: 2rem;
 }
@@ -1247,7 +1143,6 @@ main.overview-page .workshops-container .workshop .btn {
 main.detail-page {
   margin-top: 3em;
 }
-
 main.detail-page .orange-block {
   height: 1000px;
   background-image: url("assets/images/DotPattern.png");
@@ -1256,80 +1151,63 @@ main.detail-page .orange-block {
   z-index: -1;
   margin-top: -2em;
 }
-
 main.detail-page .info-container {
   width: 85%;
   margin: 0 auto;
 }
-
 main.detail-page .info-container .return {
   margin-left: 7em;
   color: #1a1a1a;
 }
-
 main.detail-page section.info {
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
   margin-right: 5em;
 }
-
 main.detail-page section.info .image-section {
   width: 55%;
 }
-
 main.detail-page section.info .image-section .top {
   margin-bottom: 1em;
 }
-
 main.detail-page section.info .image-section .top img {
   width: 100%;
 }
-
 main.detail-page section.info .image-section .bottom {
   display: flex;
 }
-
 main.detail-page section.info .image-section .bottom .img-small1 {
   width: 30%;
 }
-
 main.detail-page section.info .image-section .bottom .img-small2 {
   width: 68%;
   margin-left: 1em;
 }
-
 main.detail-page section.info .image-section .sponsor {
   width: 100%;
   margin-left: 55%;
 }
-
 main.detail-page section.info .image-section .sponsor p {
   text-transform: uppercase;
 }
-
 main.detail-page section.info .image-section .sponsor img {
   width: 30%;
 }
-
 main.detail-page section.info .text-section {
   width: 35%;
 }
-
 main.detail-page section.info .text-section h1 {
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: -1em;
 }
-
 main.detail-page section.info .text-section .intro {
   font-size: 20px;
 }
-
 main.detail-page section.info .text-section p {
   font-size: 18px;
 }
-
 main.detail-page section.info .text-section p .bold {
   font-weight: 700;
 }
@@ -1342,118 +1220,94 @@ main.detail-page section.info .text-section p .bold {
   margin-top: 3em;
   margin-left: 9.5em;
 }
-
 .form-section .form-container {
   display: flex;
   justify-content: space-between;
-  background-color: #F8f8f8;
+  background-color: #F9fafb;
   width: 95%;
   padding: 3em 3em 3em 0;
 }
-
 .form-section .form-container .img {
   width: 25%;
 }
-
 .form-section .form-container .img img {
   width: 100%;
 }
-
 .form-section .form-container form {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
-
 .form-section .form-container form .personal {
   width: 50%;
 }
-
 .form-section .form-container form .personal label {
   display: block;
   font-size: 20px;
   font-weight: 700;
 }
-
 .form-section .form-container form .personal > div {
   margin-bottom: 1em;
 }
-
 .form-section .form-container form .personal input {
   width: 72.5%;
 }
-
 .form-section .form-container form .personal input::placeholder {
   font-size: 18px;
   color: #91A1BB;
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
-
 .form-section .form-container form .personal .available-options select {
   min-width: 22.5%;
 }
-
 .form-section .form-container form .personal .citycode {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
-
 .form-section .form-container form .personal .citycode .postal_code,
 .form-section .form-container form .personal .citycode .city {
   width: 20%;
 }
-
 .form-section .form-container form .personal .citycode .postal_code input,
 .form-section .form-container form .personal .citycode .city input {
   width: 325%;
 }
-
 .form-section .form-container form .workshop-selection {
   width: 50%;
 }
-
 .form-section .form-container form .workshop-selection .workshop-option {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
-
 .form-section .form-container form .workshop-selection .workshop-option label {
   font-size: 18px;
 }
-
 .form-section .form-container form .workshop-selection .location {
   margin-top: 2.5em;
   margin-bottom: 3em;
 }
-
 .form-section .form-container form .workshop-selection .location label {
   display: block;
   font-size: 20px;
   font-weight: 700;
 }
-
 .form-section .form-container form .workshop-selection .location select {
   width: 80%;
 }
-
 .form-section .form-container form .workshop-selection .remarks {
   margin-bottom: 3em;
 }
-
 .form-section .form-container form .workshop-selection .remarks label {
   display: block;
   font-size: 20px;
   font-weight: 700;
 }
-
 .form-section .form-container form .workshop-selection .remarks textarea {
   width: 80%;
 }
-
 .form-section .form-container .practical {
   width: 20%;
 }
-
 .form-section .bold {
   font-weight: 700;
   font-size: 20px;
@@ -1495,8 +1349,9 @@ main.detail-page section.info .text-section p .bold {
   .form-section h2 {
     /*text-transform: uppercase;*/
     color: #1a1a1a;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1;
+    font-weight: 400;
     margin-left: 0;
     margin-top: 0;
     text-align: center;
@@ -1516,7 +1371,7 @@ main.detail-page section.info .text-section p .bold {
     width: 100%;
   }
   .form-section .form-container form .personal,
-  .form-section .form-container form .workshop-selection {
+.form-section .form-container form .workshop-selection {
     width: 80%;
     margin: 0 auto;
   }
@@ -1540,7 +1395,6 @@ main.detail-page section.info .text-section p .bold {
     margin: 0 auto;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   main.detail-page .orange-block {
     height: 1200px;
@@ -1589,4 +1443,98 @@ main.detail-page section.info .text-section p .bold {
     width: 90%;
   }
 }
-/*# sourceMappingURL=main.css.map */
+.sp_section {
+  margin-bottom: 2rem;
+}
+
+.sp_section {
+  margin-bottom: 2rem;
+}
+
+.sp_section {
+  margin-bottom: 2rem;
+}
+
+.swiper-container {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.m-slider {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #F9fafb;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.m-slider .m-slider__item {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+.m-card .m-card__header {
+  padding-top: 75%;
+  height: 0;
+  background-position: center;
+  background-size: cover;
+}
+.m-card .m-card__body h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+.m-card .m-card__body p {
+  margin: 1rem;
+}
+.m-card:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.slider {
+  margin: 0 -30px;
+}
+
+.cards {
+  margin-top: 30px;
+}
+.cards .cards__note {
+  margin-top: 30px;
+}
+.cards .cards__body {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards .cards__body {
+    display: flex;
+  }
+}
+.cards .cards__item {
+  display: flex;
+  flex: 0 1 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cards .cards__item {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards .cards__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
