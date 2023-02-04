@@ -29,366 +29,326 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="stylesheet" href="assets/css/cookieconsent.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <style>
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .bg-dots{
+        background-image: url("assets/images/DotPattern.png"); 
+        background-repeat: no-repeat;
+        background-position: top right;
+      }
+      .bg-dots-bottom{
+        background-image: url("assets/images/DotPattern.png"); 
+        background-repeat: no-repeat;
+        background-position: bottom left;
+      }
+    </style>
 </head>
 
 <body>
+<!-- navbar -->
     <header>
-        <div class="header-container">
-            <div class="logo-block">
-              <a href="index.html">
-                <img src="assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
-              </a>
-            </div>
-            <div class="logo-block">
-              <a href="index.html">
-                <img src="assets/images/logos/logo_main.svg" alt="logo zeg het met kleur" class="logo">
-              </a>
-            </div>
-            
-            <nav>
-              <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-              </ul>
-            </nav>
       
-            <div class="hamburger">
-              <i class="fas fa-bars"></i>
-            </div>
-          </div>
-    </header>
-    
-    <main class="homepage">
-      <div class="orange-block"></div>
-  
-      <section class="intro sp_section">
-        <div class="image-section">
-          <iframe class="home-intro" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="Trending technologieën in Arteveldehogeschool workshops voor secundaire scholen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-  
-        <div class="text-section">
-          <h1 class="serif">Zeg het met kleur</h1>
-            <p style="padding-bottom: 1rem;">
-            We stellen u graag de workshops <strong>Zeg het met kleur</strong> voor.
-            </p>
-
-            <p style="padding-bottom: 1rem;">
-            De workshops spelen in op de groeiende nood aan <strong>mediawijsheid</strong> en <strong>interesse voor media</strong> bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
-          </p>
-
-          <button class="btn btn-regular">
-            <a href="workshops.html" title="Alle Workshops">Ontdek alle workshops</a>
-          </button>
-        </div>
-      </section>
-  
-
-      <section class="workshops">
-        
-  
-        <!-- Slider main container -->
-        <div class="workshops-container">
-
-          <div class="cards-container">
-
+      <nav class="navbar navbar-expand-lg navbar-light top">
+        <div class="container">
           
-        <div class="cards">
-          <p class="cards__note"><h2>Workshops</h2></p>
-          <div class="cards__body">
-            <!-- card item 1 -->
-            <div class="cards__item">
-              <div class="m-card" ontouchstart>
-                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/PGM-workshops.jpg');"></div>
-                <div class="m-card__body">
-                  <h3>Bekijk alle workshops</h3>
-                <p>
-                  We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.
-                
-                </p>
-                <p>
-                  <button class="btn btn-small">
-                    <a href="workshops.html">Bekijk alle workshops</a>
-                  </button>
-                </p>
-                </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logos/logo_main.svg" height="80" alt="logo zeg het met kleur" class="logo">
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="workshops.html">Workshops</a>
+              </li>
+            </ul>
+          </div>
+
+        <div>
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
+          </a> 
+        </div>
+        
+      </div>
+      </nav>
+    </header>
+
+     <main>
+        <section class="py-5 container bg-dots-bottom">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 pb-5">
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" width="480" height="320" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="Trending technologieën in Arteveldehogeschool workshops voor secundaire scholen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-
-
-            <div class="cards__item">
-              <div class="m-card" ontouchstart>
-                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/druk.jpg');"></div>
-                <div class="m-card__body">
-                  <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
+            <div class="col-lg-6 col-md-8 bg-white">
+              <h1>Zeg het met kleur</h1>
+              <p class="lead">
+                We stellen u graag de workshops Zeg het met kleur voor&hellip;</p>
               <p>
-                Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
-                Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.
+                <p>
+                  De workshops spelen in op de groeiende nood aan <strong>mediawijsheid</strong> en <strong>interesse voor media</strong> bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
+                </p>
+                <a href="workshops.html" class="btn btn-lg btn-outline-dark my-2" title="Alle Workshops">Ontdek alle workshops</a>
               </p>
-              <p>
-                <button class="btn btn-small">
-                  <a href="workshops/print.html">Meer info</a>
-                </button>
-              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 3 kaarten -->
+        <div class="py-5 bg-light">
+          <div class="container">
+            <h2 class="pb-2">Workshops</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               
+              <!-- eerste kaart -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/workshops-overview/PGM-workshops.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Trending technologieën workshops</h5>
+                    <p class="card-text">We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops.html" class="btn btn-md btn-dark">Meer info</a></button>
+                      </div>
+                      <small class="text-muted">Inschrijven mogelijk!</small>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="cards__item">
-              <div class="m-card" ontouchstart>
-                <div class="m-card__header" style="background-image: url('assets/images/workshops-overview/PGM-creative-programming.jpg');"></div>
-                <div class="m-card__body">
-                  <h3>Start-to-Code: Creative Programming</h3>
-                <p>
-                  Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.
-                </p>
-
-                <p>
-                  <button class="btn btn-small">
-                    <a href="workshops/creative-programming.html" title="Meer info">Meer info</a>
-                  </button>
-                </p>
-                
+              <!-- tweede kaart -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/workshops-overview/PGM-creative-programming.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Start-to-Code: Creative Programming</h5>
+                    <p class="card-text">Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops/creative-programming.html" class="btn btn-md btn-dark">Meer info</a></button>
+                      </div>
+                      <small class="text-muted">Inschrijven mogelijk!</small>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-          </div><!-- .cards__body // -->
-        </div><!-- .cards // -->
-      </div>
-      </div>
-      </section>
-  
-      <section class="team">
-        <div class="glider-contain multiple glider-contain-team">
 
-          <h2>Ontmoet ons team</h2>
-          <button aria-label="Vorige" class="glider-prev">«</button>
-          <button aria-label="Volgende" class="glider-next">»</button>
-
-          <div class="glider" id="glider-team">
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Jonas Borms.jpg" alt="Jonas Borms">
-              <div class="info">
-                <h4><span class="firstname">Jonas</span>&nbsp;<span class="lastname">Borms</span></h4>
-                <h5>Onderzoeker</h5>
-                <ul>
-                  <li>Onderzoeker en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</li>
-                </ul>
-              </div>
-            </div>
-            <!-- // end card -->
-
-
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Ann Dehaemers.jpeg" alt="Ann Dehaemers">
-              <div class="info">
-                <h4><span class="firstname">Ann</span>&nbsp;<span class="lastname">Dehaemers</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-              </div>
-            </div>
-            <!-- // end card -->
-
-           
-
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Philippe-De-Pauw-Waterschoot.jpg" alt="Philippe De Pauw">
-              <div class="info">
-                <h4><span class="firstname">Philippe</span>&nbsp;<span class="lastname">De Pauw</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Graduaat Programmeren</li>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-              </div>
-            </div>
-            <!-- // end card -->
-
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Dieter De Weirdt.jpg" alt="Dieter De Weirdt">
-              <div class="info">
-                <h4><span class="firstname">Dieter</span>&nbsp;<span class="lastname">De Weirdt</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Graduaat Programmeren</li>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-              </div>
-            </div>
-            <!-- // end card -->
-
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Frederick-Roegiers.jpeg" alt="Frederick Roegiers">
-              <div class="info">
-                <h4><span class="firstname">Frederick</span>&nbsp;<span class="lastname">Roegiers</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Graduaat Programmeren</li>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-annelien_suenaert.jpg" alt="Annelien Suenaert">
-              <div class="info">
-                <h4><span class="firstname">Annelien</span>&nbsp;<span class="lastname">Suenaert</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-charlotte_van_acker.jpg" alt="Charlotte Van Acker">
-              <div class="info">
-                <h4><span class="firstname">Charlotte</span>&nbsp;<span class="lastname">Van Acker</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Bachelor Communicatie</li>
-                </ul>
-              </div>
-            </div>
-         
-  
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Eva-Vande-Populiere.jpg" alt="Eva Vande Populiere">
-              <div class="info">
-                <h4><span class="firstname">Eva</span>&nbsp;<span class="lastname">Vande Populiere</span></h4>
-                <h5>Docent</h5>
-                <ul>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                </ul>
-
-              </div>
-            </div>
-  
-            <div class="team-card">
-              <img src="assets/images/team/ZegHetMetKleur-Melanie-Verstockt.jpg" alt="Melanie Verstockt">
-              <div class="info">
-                <h4><span class="firstname">Melanie</span>&nbsp;<span class="lastname">Verstockt</span></h4>
-                <h5>Medewerker</h5>
-                <ul>
-                  <li>Bachelor Grafische en Digitale Media</li>
-                  <li>Expertisenetwerk Communicatie, Media en Design</li>
-                </ul>
-
+              <!-- derde kaart -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/workshops-overview/druk.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Jouw kleurproject in druk</h5>
+                    <p class="card-text">Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
+                      Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops/print.html" class="btn btn-md btn-dark">Meer info</a></button>
+                      </div>
+                      <small class="text-muted">Inschrijven mogelijk!</small>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <div class="container">
-      <div class="row">
+      
+  <!-- Team -->
+      <section class="pt-5 pb-5 container bg-dots">
+        <h2>Ontmoet ons team</h2>
+        <div class="row">
           <div class="splide">
               <div class="splide__track">
                   <div class="splide__list">
-                      <div class="col-sm-4 splide__slide m-2">
-                          <div class="card bg-dark text-white">
+                    <!-- card 1-->
+                      <div class="col-md-4 splide__slide m-2">
+                          <div class="card h-100 bg-dark text-white">
+                            <img src="assets/images/team/ZegHetMetKleur-Jonas Borms.jpg" class="card-img-top" alt="Jonas Borms">
                               <div class="card-body">
-                                  <h5 class="card-title">Crad Slider 1 </h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to
-                                      additional content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
+                                  <h5 class="card-title">Jonas Borms</h5>
+                                  <p class="card-text">Onderzoek en Ontwikkeling voor het Expertisenetwerk Communicatie, Media en Design</p>
+                                  <!--<a href="workshops/wot.html" class="btn btn-light">Workshop info</a>-->
                               </div>
                           </div>
                       </div>
-                      <div class="col-sm-4 splide__slide m-2">
-                          <div class="card bg-dark text-white">
-                              <div class="card-body">
-                                  <h5 class="card-title">Crad Slider 2</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to
-                                      additional content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
+                      <!-- card 2-->
+                      <div class="col-md-4 splide__slide m-2">
+                        <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-Ann Dehaemers.jpeg" class="card-img-top" alt="Ann Dehaemers">
+                          
+                            <div class="card-body">
+                                <h5 class="card-title">Ann Dehaemers</h5>
+                                <p class="card-text">Docent Bachelor Grafische en Digitale Media</p>
+                                <!--<a href="workshops/beeld.html" class="btn btn-light">Workshop info</a>-->
+                            </div>
+                        </div>
+                      </div>
+                      <!-- card 3-->
+                      <div class="col-md-4 splide__slide m-2">
+                          <div class="card h-100 bg-dark text-white">
+                            
+                            <img src="assets/images/team/ZegHetMetKleur-Philippe-De-Pauw-Waterschoot.jpg" alt="Philippe De Pauw" class="card-img-top">
+
+                            <div class="card-body">
+                              <h5 class="card-title">Philippe De Pauw</h5>
+                              <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
+                              <!--<a href="workshops/creative-programming.html" class="btn btn-light">meer info</a>-->
+                          </div>
+                          </div>
+                      </div>
+                      <!-- card 4-->
+                      <div class="col-md-4 splide__slide m-2">
+                          <div class="card h-100 bg-dark text-white">
+                            <img src="assets/images/team/ZegHetMetKleur-Dieter De Weirdt.jpg" alt="Dieter De Weirdt" class="card-img-top">  
+                            <div class="card-body">
+                                  <h5 class="card-title">Dieter De Weirdt</h5>
+                                  <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
+                                  <!--<a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>-->
                               </div>
                           </div>
                       </div>
-                      <div class="col-sm-4 splide__slide m-2">
-                          <div class="card bg-dark text-white">
-                              <div class="card-body">
-                                  <h5 class="card-title">Crad Slider 3</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to
-                                      additional content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                              </div>
+                      <!-- card 5-->
+                      <div class="col-md-4 splide__slide m-2">
+                        <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-Frederick-Roegiers.jpeg" alt="Frederick Roegiers" class="card-img-top">  
+                          <div class="card-body">
+                                <h5 class="card-title">Frederick Roegiers</h5>
+                                <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
+                               <!-- <a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>--> 
+                            </div>
+                        </div>
+                      </div>
+                      <!-- card 6-->
+                      <div class="col-md-4 splide__slide m-2">
+                          <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-annelien_suenaert.jpg" alt="Annelien Suenaert" class="card-img-top">  
+                          <div class="card-body">
+                                <h5 class="card-title">Annelien Suenaert</h5>
+                                <p class="card-text">Docent Bachelor Grafische en Digitale Media</p>
+                                <!--<a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>-->
+                            </div>
                           </div>
                       </div>
-                      <div class="col-sm-4 splide__slide m-2">
-                          <div class="card bg-dark text-white">
-                              <div class="card-body">
-                                  <h5 class="card-title">Crad Slider 4</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to
-                                      additional content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                              </div>
-                          </div>
+                      <!-- card 7-->
+                      <div class="col-md-4 splide__slide m-2">
+                        <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-charlotte_van_acker.jpg" alt="Charlotte Van Acker" class="card-img-top">  
+                          <div class="card-body">
+                                <h5 class="card-title">Charlotte Van Acker</h5>
+                                <p class="card-text">Docent Bachelor Communicatie</p>
+                               <!-- <a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a> --> 
+                            </div>
+                        </div>
+                      </div>
+                      <!-- card 8-->
+                      <div class="col-md-4 splide__slide m-2">
+                        <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-Eva-Vande-Populiere.jpg" alt="Eva Vande Populiere" class="card-img-top">  
+                          <div class="card-body">
+                                <h5 class="card-title">Eva Vande Populiere</h5>
+                                <p class="card-text">Docent Bachelor Grafische en Digitale Media</p>
+                                <!--<a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>-->
+                            </div>
+                        </div>
+                      </div>
+                      <!-- card 9 -->
+                      <div class="col-md-4 splide__slide m-2">
+                        <div class="card h-100 bg-dark text-white">
+                          <img src="assets/images/team/ZegHetMetKleur-Melanie-Verstockt.jpg" alt="Melanie Verstockt" class="card-img-top">  
+                          <div class="card-body">
+                                <h5 class="card-title">Melanie Verstockt</h5>
+                                <p class="card-text">Medewerker Bachelor Grafische en Digitale Media</p>
+                               <!--<a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>-->
+                            </div>
+                        </div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-  </div>
+      </section>
+    </main>
 
+<!-- footer -->
+<footer class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-12 mb-3">
+            <h3>
+              <span class="">Z</span><span class="lead">eg</span> 
+              <span class="">H</span><span class="lead">et</span> 
+              <span class="">M</span><span class="lead">et</span>
+              <span class="">K</span><span class="lead">leur</span> 
+              <span class="lead">mede mogelijk gemaakt door </span><span class="lead">GRAFOC</span>
+            </h3>
+            <hr>
+          
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link p-0 text-white">Home</a>
+              
+            <li class="nav-item mb-2">
+              <a href="workshops.html" class="nav-link p-0 active text-white">Workshops</a></li>
+          </ul>
+        </div>
+    </div>
 
-
-
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-container">
-        <h2>
-          <span style="font-weight: bold;">Z</span><span style="font-weight: lighter">eg</span> 
-          <span style="font-weight: bold;">H</span><span style="font-weight: lighter">et</span> 
-          <span style="font-weight: bold;">M</span><span style="font-weight: lighter">et</span>
-          <span style="font-weight: bold;">K</span><span style="font-weight: lighter">leur</span> 
-          <span style="text-align:right;font-size: 12pt;font-weight: normal;text-transform: lowercase;">mede mogelijk gemaakt door </span><span style="text-align:right;font-size: 12pt;font-weight: normal;text-transform: uppercase;">GRAFOC</span>
-        </h2>
-        
-        <ul>
-          <li>
-            <a href="index.html" class="active">Home</a>
-          </li>
-          <li>
-            <a href="workshops.html">Workshops</a>
-          </li>
-        </ul>
+    <div class="row">
+      <div class="col-12 col-md-2 mb-3">
         <p>
-          &copy; 2014 - 2022 <a href="https://www.arteveldehogeschool.be/" title="Arteveldehogeschool" class="wit">Arteveldehogeschool</a>
+          &copy; 2023 <a href="https://www.arteveldehogeschool.be/" title="Arteveldehogeschool" class="text-white">Arteveldehogeschool</a>
         </p>
       </div>
-    </footer>
-    <!-- // FOOTER -->
+  </div>
+
+  <!-- to top -->  
+  <p class="float-end mb-1">
+    <a class="btn btn-light" href="#">Naar top&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </p>
+  </div>  
+</footer>
 
 
-    <script src="js/main.js?27"></script>
-        <button aria-label="naar boven" id="totop" onclick="topFunction()"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-
-    <script src="js/totop.js"></script>
-    <script src="js/mobilemenu.js"></script>
 
 
 <script defer src="js/cookieconsent.js"></script>
 <script defer src="js/cookieconsent-init.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="js/hamburger.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
 <script>
     var splide = new Splide('.splide', {
         type: 'loop',
-        perPage: 3,
+        perPage: 4,
+        autoplay: true,
         rewind: true,
+        breakpoints: {
+        640: {
+          perPage: 2,
+          gap    : '.7rem',
+        },
+        480: {
+          perPage: 1,
+          gap    : '.7rem',
+        },
+  },
     });
 
     splide.mount();

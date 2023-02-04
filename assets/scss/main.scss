@@ -1,24 +1,8 @@
 @charset "UTF-8";
 
-// Vendors
-@import './vendors/normalize';
-
-// Base
-@import './base/base';
-@import './base/fonts';
-//@use './base/helpers';
-@import './base/typography';
-
-// Layout
-@import './layout/header';
-@import './layout/footer';
-//@use './layout/grid';
-
-// Components
-@import './components/buttons';
-
-// 6. Page-specific
-@import './pages/home';
-@import './pages/workshops_overview';
+// Page-specific
 @import './pages/detail_page';
-@import './pages/swiper';
+@import './pages/workshops_overview';
+
+// Bootstrap
+@import './bootstrap/bootstrap';
