@@ -34,7 +34,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="stylesheet" href="assets/css/cookieconsent.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
-
+    <style>
+      .bg-dots{
+        background-image: url("../assets/images/DotPattern.png"); 
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-position-y: 2%;
+      }
+      .bg-dots-bottom{
+        background-image: url("../assets/images/DotPattern.png"); 
+        background-repeat: no-repeat;
+        background-position: bottom left;
+      }
+    </style>
 </head>
 <body>
 <!-- navbar -->
@@ -53,28 +65,26 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link active h5" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="../workshops.html">Workshops</a>
+            <a class="nav-link h5" href="../workshops.html">Workshops</a>
           </li>
         </ul>
       </div>
 
-    <div>
+    <div class="d-none d-md-inline">
       <a class="navbar-brand" href="../index.html">
         <img src="../assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
       </a> 
     </div>
-    
   </div>
   </nav>
 </header>
-
 <main>
 <!-- tekst -->
-  <section>
-    <div class="pt-5 bg-light">
+<section class="bg-light">
+  <div class="pt-5 container bg-dots ">
 
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -164,30 +174,30 @@
       </div>
     </div>
   </section>
-  <section class="form-section">
-    <h2 class="mt-5">Aanvraag workshop</h2>
 
-    <div class="form-container">
-      <div class="img">
-        <img src="../assets/images/workshop-details/form.jpg" alt="">
-      </div>
-    
-
-      <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=6oDgtrmteUyTA23Pgm-4VHyBcV40WetEtZcQLl_pRixUNTNUSTIwQzAwTlFFVldOSUpMOUVOUkpMMy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-      
-      <div class="practical">
-        <p class="bold">Praktische info</p>
-        <p>Praktische info: De workshops kunnen doorgaan op uw eigen school of op <a href="https://www.arteveldehogeschool.be/bij-ons-studeren/onze-locaties/campus-mariakerke">onze Mediacampus.</a> <br />
-         <br />
-          Adres: Mediacampus,<br>
-          Industrieweg 232 <br />
-          9030 Mariakerke (Gent). 
-          <br>
-          <br>
-          Via <a href="mailto:zeghetmetkleur@arteveldehs.be">zeghetmetkleur@arteveldehs.be</a> kan je meer informatie opvragen i.vm. de organisatie van de workshops.
-        </p>
+  <section class="container bg-dots">
+    <h2 class="my-5 py-3 text-center">Aanvraag workshop</h2>
+    <div class="row">
+      <div class="col-12 col-md-8 bg-light p-3">
+        <div class="ratio ratio-4x3 embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://forms.office.com/Pages/ResponsePage.aspx?id=6oDgtrmteUyTA23Pgm-4VHyBcV40WetEtZcQLl_pRixUNTNUSTIwQzAwTlFFVldOSUpMOUVOUkpMMy4u&embed=true" marginwidth="0" marginheight="0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+          </div>
       </div>
 
+      <div class="col-12 col-md-4">
+        <div class="practical my-5 my-md-0">
+          <p class="h4">Praktische info</p>
+          <p>Praktische info: De workshops kunnen doorgaan op uw eigen school of op <a href="https://www.arteveldehogeschool.be/bij-ons-studeren/onze-locaties/campus-mariakerke">onze Mediacampus.</a> <br />
+           <br />
+            Adres: Mediacampus,<br>
+            Industrieweg 232 <br />
+            9030 Mariakerke (Gent). 
+            <br>
+            <br>
+            Via <a href="mailto:zeghetmetkleur@arteveldehs.be">zeghetmetkleur@arteveldehs.be</a> kan je meer informatie opvragen i.vm. de organisatie van de workshops.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </main>

@@ -46,7 +46,7 @@
       .bg-dots-bottom{
         background-image: url("assets/images/DotPattern.png"); 
         background-repeat: no-repeat;
-        background-position: bottom left;
+        background-position: top left;
       }
     </style>
 </head>
@@ -69,15 +69,15 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active h5" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="workshops.html">Workshops</a>
+                <a class="nav-link h5" href="workshops.html">Workshops</a>
               </li>
             </ul>
           </div>
 
-        <div>
+        <div class="d-none d-md-inline">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
           </a> 
@@ -88,14 +88,14 @@
     </header>
 
      <main>
-        <section class="py-5 container bg-dots-bottom">
+        <section class="py-2 container bg-dots-bottom">
           <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 pb-5">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="embed-responsive-item" width="480" height="320" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="Trending technologieën in Arteveldehogeschool workshops voor secundaire scholen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-lg-5 col-md-6 mx-auto pb-3">
+              <div class="ratio ratio-4x3 embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="Trending technologieën in Arteveldehogeschool workshops voor secundaire scholen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="col-lg-6 col-md-8 bg-white">
+            <div class="col-lg-5 col-md-6 bg-white">
               <h1>Zeg het met kleur</h1>
               <p class="lead">
                 We stellen u graag de workshops Zeg het met kleur voor&hellip;</p>
@@ -116,16 +116,15 @@
               
               <!-- eerste kaart -->
               <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 bg-danger text-light">
                   <img src="assets/images/workshops-overview/PGM-workshops.jpg" class="card-img-top" width="100%"> 
                   <div class="card-body">
                     <h5 class="card-title">Trending technologieën workshops</h5>
                     <p class="card-text">We bieden 11 verschillende workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <a href="workshops.html" class="btn btn-md btn-dark">Meer info</a></button>
+                        <a href="workshops.html" class="btn btn-md btn-light">Meer info</a></button>
                       </div>
-                      <small class="text-muted">Inschrijven mogelijk!</small>
                     </div>
                   </div>
                 </div>
