@@ -8,7 +8,6 @@ $text-font-serif: 'Source Serif Pro', sans-serif;
 $line-height:1.7;
 
 // Font-weight
-
 $font-weight-light: 200;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
@@ -16,7 +15,7 @@ $font-weight-black: 900;
 
 // Color
 $color-black: #1a1a1a;
-$color-gray-light: #F8f8f8;
+$color-gray-light: #F9fafb;
 $color-gray-dark: #91A1BB;
 $color-orange: #f58732;
 $color-orange-light: #FDE7D6;
@@ -27,14 +26,3 @@ $color-purple-image: #8965CA;
 $color-purple-code: #6847A3;
 $color-purple: #7E57C5;
 $color-white: #FFFFFF;
-
-// Screen Size
-$width-small: 768px;
-$width-large: 1024px;
-
-
-
-// Space
-.sp_section{
-    margin-bottom: 2rem;
-}
