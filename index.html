@@ -29,9 +29,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-    <link rel="stylesheet" href="/assets/css/cookieconsent.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/cookieconsent.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
     <style>
     .splide__slide img {
@@ -40,12 +40,12 @@
         object-fit: cover;
       }
       .bg-dots{
-        background-image: url("/assets/images/DotPattern.png"); 
+        background-image: url("assets/images/DotPattern.png"); 
         background-repeat: no-repeat;
         background-position: top right;
       }
       .bg-dots-bottom{
-        background-image: url("/assets/images/DotPattern.png"); 
+        background-image: url("assets/images/DotPattern.png"); 
         background-repeat: no-repeat;
         background-position: top left;
       }
@@ -60,7 +60,7 @@
         <div class="container">
           
             <a class="navbar-brand" href="#">
-              <img src="/assets/images/logos/logo_main.svg" height="80" alt="logo zeg het met kleur" class="logo">
+              <img src="assets/images/logos/logo_main.svg" height="80" alt="logo zeg het met kleur" class="logo">
             </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,155 +80,93 @@
 
         <div class="d-none d-md-inline">
           <a class="navbar-brand" href="index.html">
-            <img src="/assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
+            <img src="assets/images/logo_ahs.svg" alt="Arteveldehogeschool" class="logo-artevelde">
           </a> 
         </div>
-  
-        <div class="text-section">
-          <h1 class="serif">Zeg het met kleur</h1>
-            <p style="padding-bottom: 1rem;">
-            We stellen u graag de workshops Zeg het met 3D, Code, Kleur, Beeld en geluid voor.
-            </p>
+        
+      </div>
+      </nav>
+    </header>
 
-            <p style="padding-bottom: 1rem;">
-            De workshops spelen in op de groeiende nood aan mediawijsheid en interesse voor media bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
-          </p>
+     <main>
+        <section class="py-2 container bg-dots-bottom">
+          <div class="row py-lg-5">
+            <div class="col-lg-5 col-md-6 mx-auto pb-3">
+              <div class="ratio ratio-4x3 embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iK4a5XjlRV4" title="Trending technologieën in Arteveldehogeschool workshops voor secundaire scholen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 bg-white">
+              <h1>Zeg het met kleur</h1>
+              <p class="lead">
+                We stellen u graag de workshops Zeg het met kleur voor&hellip;</p>
+              <p>
+                <p>
+                  De workshops spelen in op de groeiende nood aan <strong>mediawijsheid</strong> en <strong>interesse voor media</strong> bij jongeren uit de derde graad van het secundair onderwijs. Zo krijgen deze jongvolwassenen op een toegankelijke en interactieve manier inzicht in de talrijke mogelijkheden van de Grafische en Digitale sector.
+                </p>
+                <a href="workshops.html" class="btn btn-lg btn-outline-dark my-2" title="Alle Workshops">Ontdek alle workshops</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- 3 kaarten -->
+        <div class="py-5 bg-light">
+          <div class="container">
+            <h2 class="pb-2">Workshops</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              
+              <!-- eerste kaart -->
+              <div class="col">
+                <div class="card h-100 bg-danger text-light">
+                  <img src="assets/images/workshops-overview/PGM-workshops.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Trending technologieën workshops</h5>
+                    <p class="card-text">We bieden <strong>12 verschillende</strong> workshops aan. Bekijk ze gerust eens allemaal! Heb je nood aan een specifieke workshop? Aarzel niet om contact op te nemen.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops.html" class="btn btn-md btn-light">Meer info</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <button class="btn btn-regular">
-            <a href="workshops.html" title="Alle Workshops">Ontdek alle workshops</a>
-          </button>
-        </div>
-      </section>
-  
-      <section class="workshops sp_section">
-        <h2>Workshops</h2>
-  
-        <div class="workshops-container">
-          <div class="glider-contain multiple glider-contain-workshops">
-            <div class="glider-dots" id="dots-workshops"></div>
-  
-            <div class="glider" id="glider-workshops">
-              <div class="workshops-card">
-                <iframe class="thumbnail" src="https://www.youtube.com/embed/ypjn-uTc0Bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- <img src="./images/workshops-overview/3d.jpg" alt="Computer bij 3D printer" class="thumbnail"> -->
-                <h3>Zeg het met 3D</h3>
-                <p>
-                  Tijdens deze workshop maak je kennis met 3D-printing. Je leert de werking van een 3D-printer kennen. Je gaat zelf aan de slag met een 3D-printer. Je leert zelf een object modelleren en klaarmaken om te 3D-printen. We bespreken en analyseren interessante voorbeelden en toepassingen. 
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/3D.html" title="Meer info">Meer info</a>
-                </button>
+              <!-- tweede kaart -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/workshops-overview/PGM-creative-programming.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Start-to-Code: Creative Programming</h5>
+                    <p class="card-text">Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops/creative-programming.html" class="btn btn-md btn-dark">Meer info</a></button>
+                      </div>
+                      <small class="text-muted">Inschrijven mogelijk!</small>
+                    </div>
+                  </div>
+                </div>
               </div>
-  
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/beeld.jpg" alt="Persoon maakt video" class="thumbnail">
-                <h3>Vertel het met... Beeld!</h3>
-                <p>
-                  Hoge kwaliteitsvideo’s maken met enkel je smartphone? Het kan! We zien het dagelijks passeren op TikTok en Reels, maar in deze workshop word ook jij de content creator van de toekomst. Monteren en bewerken met niks anders dan je smartphone? Yes, we can!
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/beeld.html" title="Meer info">Meer info</a>
-                </button>
+
+              <!-- derde kaart -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/images/workshop-details/print/GDM 3-small-084.jpg" class="card-img-top" width="100%"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Jouw kleurproject in druk</h5>
+                    <p class="card-text">Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
+                      Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="workshops/print.html" class="btn btn-md btn-dark">Meer info</a></button>
+                      </div>
+                      <small class="text-muted">Inschrijven mogelijk!</small>
+                    </div>
+                  </div>
+                </div>
               </div>
-  
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/creative-programming.jpg" alt="Computer op bureau" class="thumbnail">
-                <h3>Start-to-Code: Creative Programming</h3>
-                <p>
-                  Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/creative-programming.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/wot.jpg" alt="Code op scherm" class="thumbnail">
-                <h3>Start to Code: Web of Things</h3>
-                <p>
-                  Deze workshop zoomt in op het leren programmeren door software met hardware te combineren. Om hardware toegankelijk te maken zullen we gebruik maken van de “Raspberry Pi” met daarop een module “Sense Hat”. De software wordt geschreven m.b.v. de programmeertaal “Python” en de cloud service “Google Firebase”.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/wot.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/geluid.jpg" alt="Geluidsbestanden bewerken" class="thumbnail">
-                <h3>Vertel het met... Geluid!</h3>
-                <p>
-                  Podcasts, interviews, storybooks… Geluid is overal. In deze workshop dompelen we jongeren onder in het creatieve proces van audio storytelling. Met enkel de smartphone in de hand, worden ze in no 
-                  time een futureproof storyteller met journalistieke skills!
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/geluid.html" title="Meer info">Meer info</a>
-                </button>
-              </div>
-  
-              <div class="workshops-card">
-                <iframe class="thumbnail" src="https://www.youtube.com/embed/EAyVjm7BYw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Zeg het met kleur: Een oog op kleur</h3>
-                <p>
-                  Een oog op kleur wordt verduidelijkt op welke manier we kleuren zien, beoordelen en erover communiceren. 
-                  We vertrekken van een mini-business-case die aansluit bij de leefwereld van jongeren en 
-                  brengen een aantal probleemstellingen naar voor rond kleur.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/kleur.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/onderneming.jpg" alt="Kleurcontrole" class="thumbnail">
-                <h3>Zeg het met kleur: Zet je onderneming in kleur</h3>
-                <p>
-                  Tijdens de workshop zoeken we uit wat de commerciële troeven van kleur zijn voor een onderneming en 
-                  geven we tips aan schoolondernemingen om extra succes te boeken met behulp van doordacht kleurgebruik.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/onderneming.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/druk.jpg" alt="Zeefdruk" class="thumbnail">
-                <h3>Zeg het met kleur: Jouw kleurproject in druk</h3>
-                <p>
-                  Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
-                  Ga je voor learning by experience? Je leert op een interactieve manier de grafische mediasector kennen en je leerlingen keren huiswaarts met een zelf bedrukte en gepersonaliseerde tote bag.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/print.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/deepfake.jpg" alt="Deepfake" class="thumbnail">
-                <h3>Deepdive into Deepfakes</h3>
-                <p>
-                  Duik eens in een deepfakes! Vertrekkende vanuit een korte inleiding rond wat machine learning is, willen we artificiële intelligentie &lsquo;demystifiyen&rsquo;. In een workshop van een 90-tal 
-                  minuten leer je hoe je zelf een deepfake kunnen maken
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/deepfake.html">Meer info</a>
-                </button>
-              </div>
-              
-              <div class="workshops-card">
-                <img src="assets/images/workshops-overview/extra.jpg" alt="Aula met studenten" class="thumbnail">
-                <h3>Gastles thema: domeinoverschrijdend</h3>
-                <p>
-                  Ben je op zoek naar een boeiende gastles binnen het thema communicatie, marketing, nieuws, media, 
-                  design, grafische technieken, fotografie of printmedia? Of wil je je lesonderwerp anders 
-                  aanpakken dan vorig jaar, maar mis je inspiratie? Dan werken we graag een lesvorm en -inhoud 
-                  uit op maat van je leerdoelen en leerlingen.
-                </p>
-                <button class="btn btn-small">
-                  <a href="workshops/extra.html">Meer info</a>
-                </button>
-              </div>
-              
-        </div>
+            </div>
+          </div>
         </div>
       
   <!-- Team -->
@@ -250,7 +188,22 @@
                           </div>
                       </div>
                       <!-- card 2-->
-                      <div class="col-md-4 splide__slide m-2">
+                       <div class="col-md-4 splide__slide m-2">
+                          <div class="card h-100 bg-dark text-white">
+                            
+                            <img src="assets/images/team/ZegHetMetKleur-Inge-DeCanck.jpg" alt="Inge De Canck" class="card-img-top">
+
+                            <div class="card-body">
+                              <h5 class="card-title">Inge De Canck</h5>
+                              <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
+                              
+                          </div>
+                          </div>
+                      </div>
+
+                      
+                      <!-- card 3-->
+                     <div class="col-md-4 splide__slide m-2">
                         <div class="card h-100 bg-dark text-white">
                           <img src="assets/images/team/ZegHetMetKleur-Ann Dehaemers.jpeg" class="card-img-top" alt="Ann Dehaemers">
                           
@@ -261,25 +214,13 @@
                             </div>
                         </div>
                       </div>
-                      <!-- card 3-->
-                      <div class="col-md-4 splide__slide m-2">
-                          <div class="card h-100 bg-dark text-white">
-                            
-                            <img src="assets/images/team/ZegHetMetKleur-Philippe-De-Pauw-Waterschoot.jpg" alt="Philippe De Pauw" class="card-img-top">
 
-                            <div class="card-body">
-                              <h5 class="card-title">Philippe De Pauw</h5>
-                              <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
-                              <!--<a href="workshops/creative-programming.html" class="btn btn-light">meer info</a>-->
-                          </div>
-                          </div>
-                      </div>
                       <!-- card 4-->
                       <div class="col-md-4 splide__slide m-2">
                           <div class="card h-100 bg-dark text-white">
-                            <img src="assets/images/team/ZegHetMetKleur-Dieter De Weirdt.jpg" alt="Dieter De Weirdt" class="card-img-top">  
+                            <img src="assets/images/team/ZegHetMetKleur-Tom-Neuttiens.jpg" alt="Tom Neuttiens" class="card-img-top">  
                             <div class="card-body">
-                                  <h5 class="card-title">Dieter De Weirdt</h5>
+                                  <h5 class="card-title">Tom Neuttiens</h5>
                                   <p class="card-text">Docent Graduaat Programmeren & Bachelor Grafische en Digitale Media</p>
                                   <!--<a href="workshops/machinelearning.html" class="btn btn-light">Workshop info</a>-->
                               </div>
@@ -386,8 +327,8 @@
   </div>  
 </footer>
 
-<script defer src="/js/cookieconsent.js"></script>
-<script defer src="/js/cookieconsent-init.js"></script>
+<script defer src="js/cookieconsent.js"></script>
+<script defer src="js/cookieconsent-init.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 

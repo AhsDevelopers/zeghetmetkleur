@@ -1,23 +1,14 @@
 {
-  "name": "Zeg Het Met Kleur",
-  "version": "1.0.0",
-  "description": "Workshops voor secundair onderwijs door Arteveldehogeschool, Gent",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gdmgent/.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gdmgent//issues"
-  },
-  "homepage": "https://github.com/gdmgent/",
-  "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.15.4",
-    "mediabox": "1.1.3"
-  }
+    "name": "zeghetmetkleur",
+    "version": "1.0.0",
+    "description": "Workshops Grafische en Digitale Media voor secundair onderwijs",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Benedikte Vanderweeën",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.3.0"
+    }
 }
